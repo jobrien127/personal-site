@@ -1,0 +1,43 @@
+/* src/components/TabBar.css */
+
+  /* TabBar styles */
+.tab-bar {
+    position: fixed;
+    width: 100%;
+    background-color: #50473e;
+    display: flex;
+    padding: 10px 20px; /* Add padding to the sides */
+    z-index: 1000;
+}
+
+.tab-links-container {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+  
+.tab-links {
+  display: flex;
+  gap: 30px; /* Add gap between links */
+}
+
+.tab-link {
+  background: blue;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tab-link:hover {
+  text-decoration: underline;
+  background-color: darkblue;
+  color: lightgray;
+}
+
+.tab-header{
+  color: white;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
