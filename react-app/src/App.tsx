@@ -5,7 +5,7 @@ import TabBar from './components/TabBar/TabBar';
 import Home from './components/Home/Home';
 import Resume from './components/Resume/Resume';
 import Portfolio from './components/Portfolio/Portfolio';
-import Blog from './components/Blog/Blog';
+// import Blog from './components/Blog/Blog';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 
@@ -24,7 +24,7 @@ const App: React.FC = () => {
             <Route path="/" element={<Home />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/resume" element={<Resume />} />
-            <Route path="/blog" element={<Blog />} />
+            {/* <Route path="/blog" element={<Blog />} /> */}
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>

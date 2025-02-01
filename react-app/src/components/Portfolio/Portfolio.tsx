@@ -13,33 +13,35 @@ const projects: Project[] = [
     id: 1,
     title: 'Personal Website',
     description: 'A personal website built with React and TypeScript.',
-    link: 'https://github.com/yourusername/personal-website',
+    link: 'https://github.com/jobrien127',
   },
   {
     id: 2,
-    title: 'E-commerce Platform',
-    description: 'An e-commerce platform built with Node.js and Express.',
-    link: 'https://github.com/yourusername/e-commerce-platform',
+    title: 'TODO',
+    description: 'TODO',
+    link: 'https://github.com/jobrien127',
   },
   {
     id: 3,
-    title: 'Machine Learning Model',
-    description: 'A machine learning model for predicting house prices.',
-    link: 'https://github.com/yourusername/machine-learning-model',
+    title: 'TODO',
+    description: 'TODO',
+    link: 'https://github.com/jobrien127',
   },
 ];
 
 const Portfolio: React.FC = () => {
   return (
     <section id="portfolio">
+      <div className='portfolio-text'>
       <h2>My Work</h2>
+      </div>
       <div className="projects">
         {projects.map((project) => (
           <div key={project.id} className="project" id='project'>
             <h3 className="project-title">{project.title}</h3>
             <p className="project-description">{project.description}</p>
             <a href={project.link} className="project-link">
-              View Project
+              TODO
             </a>
           </div>
         ))}

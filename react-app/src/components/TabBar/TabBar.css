@@ -4,9 +4,9 @@
 .tab-bar {
     position: fixed;
     width: 100%;
-    background-color: #50473e;
+    background-color: #333;
     display: flex;
-    padding: 10px 20px; /* Add padding to the sides */
+    padding: 10px 20px;
     z-index: 1000;
 }
 
@@ -14,15 +14,16 @@
   display: flex;
   justify-content: center;
   flex-grow: 1;
+  gap: 30px;
 }
   
 .tab-links {
   display: flex;
-  gap: 30px; /* Add gap between links */
+  gap: 30px;
 }
 
 .tab-link {
-  background: blue;
+  background: #2f4f4f;
   border: none;
   color: white;
   font-size: 1.2rem;
@@ -32,12 +33,18 @@
 
 .tab-link:hover {
   text-decoration: underline;
-  background-color: darkblue;
+  background-color: #273838;
   color: lightgray;
+}
+
+.tab-link.active {
+  background-color: darkslateblue;
+  color: #fff;
 }
 
 .tab-header{
   color: white;
   font-size: 1.4rem;
   text-decoration: none;
+  margin-top: 5px;
 }

@@ -1,5 +1,11 @@
 #portfolio {
   padding: 20px;
+  text-align: center;
+}
+
+#portfolio .portfolio-text {
+color: whitesmoke;
+background-color: darkslategray;
 }
 
 .projects {
@@ -9,8 +15,9 @@
 }
 
 .project {
-  background-color: #fff;
+  background-color: #273838;
   border: 1px solid #ddd;
+  color: whitesmoke;
   border-radius: 5px;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

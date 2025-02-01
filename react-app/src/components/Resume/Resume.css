@@ -8,3 +8,8 @@
     margin-bottom: 10px;
     text-align: center;
 }
+
+#resume .resume-text {
+    background-color: darkslategray;
+    color: whitesmoke;
+}

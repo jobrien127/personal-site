@@ -1,9 +1,13 @@
 import React from 'react';
+import './Resume.css';
 
 const Resume: React.FC = () => {
   return (
     <section id="resume">
+      <div className='resume-text'>
       <h2>Resume</h2>
+      </div>
+    
       <iframe 
         src="../../assets/Joseph_OBrien_CV.pdf" 
         width="100%" 

@@ -4,10 +4,15 @@ import './Home.css';
 const Home: React.FC = () => {
   return (
     <section id="home">
-      <h1>Welcome to Joseph O'Brien's Portfolio</h1>
+      <div className='home-text'>
+        <h1>Welcome!</h1>
+      </div>
+      <img src="../../assets/myFace.png" alt="Home" className="home-image" />
+      <div className='home-text'>
       <p>
-        Hello! I'm Joseph O'Brien, a passionate software developer. This site showcases my resume, portfolio, blog, and contact information. Feel free to explore and learn more about my work and experiences.
+        TODO: Add a brief introduction here
       </p>
+      </div>
     </section>
   );
 };

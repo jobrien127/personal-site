@@ -3,31 +3,27 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
+  background-color: #fa058c;
 }
+
 .app .content {
-  padding-top: 60px; /* To offset the fixed TabBar */
+  padding-top: 60px;
+  background-color: #c4f406;
 }
 
 .app .section {
-  min-height: 100vh; /* Makes each section take up the full height of the viewport */
+  min-height: 100vh;
   padding: 20px;
   box-sizing: border-box;
 }
 
-.app #about {
-  background-color: #f1f1f1;
+.app #home, 
+.app #contact {
+  background-color: transparent;
 }
 
-.app #portfolio {
-  background-color: #e0e0e0;
-}
-
-.app #resume {
-  background-color: #d0d0d0;
-}
-
-.app #blog {
-  background-color: #c0c0c0;
+footer {
+  background-color: #998f8f;
 }
 
 button {
@@ -44,7 +40,6 @@ button:hover {
   background-color: #005bb5;
 }
 
-/* Add a smooth scroll effect for the body */
 html {
   scroll-behavior: smooth;
 }

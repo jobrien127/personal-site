@@ -1,29 +1,44 @@
-// src/components/TabBar.tsx
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import './TabBar.css';
 
 const TabBar: React.FC = () => {
   const navigate = useNavigate();
+  const location = useLocation();
 
   return (
     <div className="tab-bar">
-      <header className='tab-header'>Joseph M. O'Brien</header>
       <div className="tab-links-container">
+        <header className='tab-header'>Joseph M. O'Brien - Software Engineer</header>
         <div className="tab-links">
-          <button className="tab-link" onClick={() => navigate('/')}>
+          <button
+            className={`tab-link ${location.pathname === '/' ? 'active' : ''}`}
+            onClick={() => navigate('/')}
+          >
             Home
           </button>
-          <button className="tab-link" onClick={() => navigate('/resume')}>
+          <button
+            className={`tab-link ${location.pathname === '/resume' ? 'active' : ''}`}
+            onClick={() => navigate('/resume')}
+          >
             Resume
           </button>
-          <button className="tab-link" onClick={() => navigate('/portfolio')}>
+          <button
+            className={`tab-link ${location.pathname === '/portfolio' ? 'active' : ''}`}
+            onClick={() => navigate('/portfolio')}
+          >
             Portfolio
           </button>
-          <button className="tab-link" onClick={() => navigate('/blog')}>
+          {/* <button
+            className={`tab-link ${location.pathname === '/blog' ? 'active' : ''}`}
+            onClick={() => navigate('/blog')}
+          >
             Blog
-          </button>
-          <button className="tab-link" onClick={() => navigate('/contact')}>
+          </button> */}
+          <button
+            className={`tab-link ${location.pathname === '/contact' ? 'active' : ''}`}
+            onClick={() => navigate('/contact')}
+          >
             Contact
           </button>
         </div>
