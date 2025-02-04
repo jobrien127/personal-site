@@ -10,7 +10,7 @@ const TabBar: React.FC = () => {
     <div className="tab-bar">
       <div className="tab-links-container">
         <header className="tab-header">
-          Joseph M. O'Brien - Software Engineer
+          Joseph M. O&apos;Brien - Software Engineer
         </header>
         <div className="tab-links">
           <button

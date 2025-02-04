@@ -14,7 +14,7 @@ const Home: React.FC = () => {
         />
       </div>
       <p>
-        Hello! My name is Joseph O'Brien and I am a software engineer.
+        Hello! My name is Joseph O&apos;Brien and I am a software engineer.
         <br />
       </p>
       <p>

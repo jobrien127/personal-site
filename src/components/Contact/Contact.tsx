@@ -17,7 +17,7 @@ const Contact: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Joseph O'Brien
+            Joseph O&apos;Brien
           </a>
         </li>
         <li>

@@ -1,5 +1,5 @@
-import React from 'react';
-import './Resume.css';
+import React from "react";
+import "./Resume.css";
 
 const Resume: React.FC = () => {
   return (
@@ -15,7 +15,7 @@ const Resume: React.FC = () => {
         title="Joseph O'Brien CV"
       />
       <p>
-        If the PDF does not display, you can download it{' '}
+        If the PDF does not display, you can download it{" "}
         <a
           href="../../assets/Joseph_OBrien_CV.pdf"
           target="_blank"
