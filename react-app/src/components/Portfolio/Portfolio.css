@@ -4,8 +4,8 @@
 }
 
 #portfolio .portfolio-text {
-color: whitesmoke;
-background-color: darkslategray;
+  color: whitesmoke;
+  background-color: darkslategray;
 }
 
 .projects {
@@ -34,7 +34,7 @@ background-color: darkslategray;
 }
 
 .project-link {
-  color: #007bff;
+  color: #8d7df5;
   text-decoration: none;
   font-weight: bold;
 }

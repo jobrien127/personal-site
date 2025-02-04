@@ -1,30 +1,31 @@
 /* src/components/Footer.css */
 /* src/components/Footer.css */
 .footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    font-size: 0.9rem;
-    box-sizing: border-box;
-  
-    /* Use Flexbox to center content */
-    display: flex;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center;     /* Centers content vertically */
-  
-    /* Optional: Set a min-height to give the footer some breathing room */
-    min-height: 60px;
-  }
-  /* Ensures the footer always stays at the bottom when content is short */
-  body, html {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  .content {
-    flex: 1; /* Ensures the content area expands to take remaining space */
-  }
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+
+  /* Use Flexbox to center content */
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+
+  /* Optional: Set a min-height to give the footer some breathing room */
+  min-height: 60px;
+}
+/* Ensures the footer always stays at the bottom when content is short */
+body,
+html {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1; /* Ensures the content area expands to take remaining space */
+}

@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -19,7 +20,7 @@ code {
 
 .content {
   flex: 1;
-  background-image: url('../../public/assets/background2.png'); /* Add your background image path here */
+  background-image: url('../../public/assets/portfolio_bg/bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

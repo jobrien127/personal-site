@@ -16,11 +16,12 @@
 }
 
 .blog-post {
-  background-color: white;
+  background-color: #273838;
   border: 1px solid #ddd;
+  color: whitesmoke;
+  border-radius: 5px;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .blog-post h3 {
@@ -30,24 +31,24 @@
 
 .blog-excerpt {
   font-size: 1rem;
-  color: #313131;
+  color: lightgoldenrodyellow;
 }
 
 .blog-content {
   font-size: 1rem;
-  color: #000000;
+  color: whitesmoke;
 }
 
 .blog-date {
   font-size: 0.9rem;
-  color: #656565;
+  color: lightgray;
   margin-top: 10px;
 }
 
 .read-more {
   display: inline-block;
   margin-top: 15px;
-  color: #007bff;
+  color: #8d7df5;
   text-decoration: none;
 }
 

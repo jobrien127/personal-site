@@ -32,12 +32,12 @@ const projects: Project[] = [
 const Portfolio: React.FC = () => {
   return (
     <section id="portfolio">
-      <div className='portfolio-text'>
-      <h2>My Work</h2>
+      <div className="portfolio-text">
+        <h2>My Work</h2>
       </div>
       <div className="projects">
         {projects.map((project) => (
-          <div key={project.id} className="project" id='project'>
+          <div key={project.id} className="project" id="project">
             <h3 className="project-title">{project.title}</h3>
             <p className="project-description">{project.description}</p>
             <a href={project.link} className="project-link">
