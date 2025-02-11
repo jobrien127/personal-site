@@ -4,17 +4,15 @@ import './Home.css';
 const Home: React.FC = () => {
   return (
     <section id="home">
-      <div className="home-text">
-        <h1>Welcome!</h1>
-
-        <img
-          src="../../assets/portfolio_png/headshot.png"
-          alt="Joseph O'Brien"
-          className="home-image"
-        />
-      </div>
+      <h2>Welcome!</h2>
+      <img
+        src="../../assets/portfolio_png/headshot.png"
+        alt="Joseph O'Brien"
+        className="home-image"
+      />
       <p>
-        Hello! My name is Joseph O&apos;Brien and I am a software engineer.
+        Hello! My name is Joseph O&apos;Brien and I am an App Developer and
+        Software Engineer.
         <br />
       </p>
       <p>

@@ -43,7 +43,9 @@ const blogPosts: BlogPost[] = [
 const Blog: React.FC = () => {
   return (
     <section id="blog">
-      <h2>My Blog</h2>
+      <div className="blog-text">
+        <h2>My Blog</h2>
+      </div>
       <div className="blog-posts">
         {blogPosts.map((post) => (
           <div key={post.id} className="blog-post">

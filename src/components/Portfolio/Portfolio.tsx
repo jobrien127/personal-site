@@ -32,9 +32,7 @@ const projects: Project[] = [
 const Portfolio: React.FC = () => {
   return (
     <section id="portfolio">
-      <div className="portfolio-text">
-        <h2>My Work</h2>
-      </div>
+      <h2>My Work</h2>
       <div className="projects">
         {projects.map((project) => (
           <div key={project.id} className="project" id="project">

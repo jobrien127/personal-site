@@ -1,5 +1,4 @@
 #contact {
-  padding: 20px;
   text-align: center; /* Center the content */
 }
 
@@ -9,9 +8,8 @@
 }
 
 #contact h2 {
-  font-size: 24px;
+  font-size: 2rem;
   margin-bottom: 10px;
-  font-size: 1.8rem;
 }
 
 #contact ul {
@@ -28,7 +26,7 @@
 }
 
 #contact a {
-  color: #0080ff;
+  color: #8d7df5;
   text-decoration: underline;
 }
 

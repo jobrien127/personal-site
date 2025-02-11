@@ -1,11 +1,12 @@
 #portfolio {
-  padding: 20px;
   text-align: center;
 }
 
-#portfolio .portfolio-text {
+#portfolio h2 {
   color: whitesmoke;
   background-color: darkslategray;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 .projects {

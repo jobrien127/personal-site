@@ -8,7 +8,10 @@ const Contact: React.FC = () => {
         <h2>Contact Information</h2>
       </div>
       <ul>
-        <li>Email: jmobrien127@gmail.com</li>
+        <li>
+          Email:{' '}
+          <a href="mailto:jmobrien127@gmail.com">jmobrien127@gmail.com</a>
+        </li>
         <li>Phone: +1 (209) 534-5372</li>
         <li>
           LinkedIn:{' '}
