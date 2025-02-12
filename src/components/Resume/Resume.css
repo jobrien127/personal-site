@@ -12,3 +12,13 @@
   background-color: darkslategray;
   color: whitesmoke;
 }
+
+#resume p {
+  background-color: darkslategray;
+  color: whitesmoke;
+}
+
+#resume a {
+  color: #8d7df5;
+  background-color: darkslategray;
+}
