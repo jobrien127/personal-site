@@ -15,13 +15,15 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16' # Specify your desired Node.js version
+          node-version: '16' # or the version you're using in your project
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          yarn install
 
       - name: Build the project
-        run: npm run build # or another build command depending on your project
+        run: |
+          yarn build  # Ensure the build is created in the 'build/' directory
 
       - name: Set up AWS CLI
         uses: aws-actions/configure-aws-credentials@v1
@@ -32,8 +34,8 @@ jobs:
 
       - name: Sync with S3
         run: |
-          aws s3 sync ./ s3://${{ secrets.S3_BUCKET }} --exclude ".git/*" --delete --acl public-read
+          aws s3 sync ./build/ s3://${{ secrets.S3_BUCKET }} --delete --acl public-read
 
       - name: Invalidate CloudFront Cache
         run: |
-          aws cloudfront create-invalidation --distribution-id YOUR_CLOUDFRONT_ID --paths "/*"
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_ID }} --paths "/*"
