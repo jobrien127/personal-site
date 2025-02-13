@@ -9,14 +9,18 @@ const Resume: React.FC = () => {
       </div>
 
       <iframe
-        src="/jmo_cv_se.pdf"
+        src="/assets/jmo_cv_se.pdf"
         width="100%"
         height="1000px"
         title="Joseph O'Brien CV"
       />
       <p>
         If the PDF does not display, you can download it{' '}
-        <a href="/jmo_cv_se.pdf" target="_blank" rel="noopener noreferrer">
+        <a
+          href="/assets/jmo_cv_se.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           here
         </a>
         .
