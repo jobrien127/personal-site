@@ -6,7 +6,7 @@ import Home from './components/Home/Home';
 // import About from './components/About/About';
 // import Photos from './components/Photos/Photos';
 import Resume from './components/Resume/Resume';
-// import Portfolio from './components/Portfolio/Portfolio';
+import Portfolio from './components/Portfolio/Portfolio';
 // import Blog from './components/Blog/Blog';
 // import BlogPost from './components/Blog/BlogPost';
 import Contact from './components/Contact/Contact';
@@ -27,7 +27,7 @@ const App: React.FC = () => {
             <Route path="/" element={<Home />} />
             {/* <Route path="/about" element={<About />} /> */}
             {/* <Route path="/photos" element={<Photos />} /> */}
-            {/* <Route path="/portfolio" element={<Portfolio />} /> */}
+            <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/resume" element={<Resume />} />
             {/* <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:id" element={<BlogPost />} /> */}

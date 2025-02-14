@@ -13,15 +13,17 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-bottom: 2%;
 }
 
 .project {
   background-color: #273838;
-  border: 1px solid #ddd;
   color: whitesmoke;
+  border: 1px solid #ddd;
   border-radius: 5px;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  opacity: 0.9;
 }
 
 .project-title {
