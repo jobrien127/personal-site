@@ -15,19 +15,22 @@
   color: whitesmoke;
   background-color: darkslategray;
   margin-bottom: 3%;
+  opacity: 0.9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 .image-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px; /* Space between images */
+  gap: 10px;
 }
 
 .home-image {
   width: 15%;
-  max-width: 300px; /* Set a maximum width */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 300px;
+  height: auto;
   margin: 5px;
   border: 3px solid #2d8080;
 }

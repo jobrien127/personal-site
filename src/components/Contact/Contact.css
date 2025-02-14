@@ -19,6 +19,9 @@
   background-color: darkslategray;
   color: whitesmoke;
   padding: 10px;
+  opacity: 0.9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 #contact li {

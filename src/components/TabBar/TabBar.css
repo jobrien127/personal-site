@@ -28,7 +28,7 @@
   background: #2f4f4f;
   border: none;
   color: white;
-  font-size: 2vw;
+  font-size: 1.2vw;
   text-decoration: none;
   cursor: pointer;
 }
@@ -46,7 +46,7 @@
 
 .tab-header {
   color: white;
-  font-size: 2vw;
+  font-size: 1.2vw;
   text-decoration: none;
-  margin-top: 5px;
+  margin-top: 0.5vw;
 }

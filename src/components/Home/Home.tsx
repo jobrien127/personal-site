@@ -11,8 +11,8 @@ const Home: React.FC = () => {
         className="home-image"
       />
       <p>
-        Hello! My name is Joseph O&apos;Brien and I am an App Developer and
-        Software Engineer.
+        Hello! My name is Joseph (Mac) O&apos;Brien and I am an App Developer
+        and Software Engineer.
         <br />
       </p>
       <p>
