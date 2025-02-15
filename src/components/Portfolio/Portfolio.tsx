@@ -18,7 +18,7 @@ const projects: Project[] = [
   {
     id: 2,
     title: '30XX Arena Survival',
-    description: 'A 2D game created in college with GameMaker Studio.',
+    description: 'A 2D game created with GameMaker Studio.',
     link: 'https://github.com/jobrien127/30XX_Arena_Survival',
   },
   {
