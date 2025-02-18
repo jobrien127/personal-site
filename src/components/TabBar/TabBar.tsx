@@ -8,7 +8,7 @@ const TabBar: React.FC = () => {
 
   return (
     <div className="tab-bar">
-      <div className="tab-links-container">
+      <div className="tab-container">
         <header className="tab-header">
           Joseph (Mac) O&apos;Brien - Software Engineer & App Developer
         </header>
@@ -19,12 +19,12 @@ const TabBar: React.FC = () => {
           >
             Home
           </button>
-          <button
+          {/* <button
             className={`tab-link ${location.pathname === '/about' ? 'active' : ''}`}
             onClick={() => navigate('/about')}
           >
             About
-          </button>
+          </button> */}
           <button
             className={`tab-link ${location.pathname === '/resume' ? 'active' : ''}`}
             onClick={() => navigate('/resume')}

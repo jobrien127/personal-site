@@ -1,39 +1,5 @@
 /* src/components/TabBar.css */
 
-/* TabBar styles */
-.tab-bar {
-  position: fixed;
-  width: 100%;
-  background-color: #333;
-  display: flex;
-  padding: 10px 20px;
-  z-index: 1000;
-  max-height: 10%;
-}
-
-.tab-links-container {
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.tab-links {
-  display: flex;
-  flex-shrink: inherit;
-  gap: 30px;
-}
-
-.tab-link {
-  background: #2f4f4f;
-  border: none;
-  color: white;
-  font-size: 1.3em;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 .tab-link:hover {
   text-decoration: underline;
   background-color: #273838;
@@ -47,7 +13,81 @@
 
 .tab-header {
   color: white;
-  font-size: 1.3em;
   text-decoration: none;
-  margin-top: 0.5em;
+}
+
+@media (max-width: 768px) {
+  /* TabBar styles */
+  .tab-bar {
+    position: fixed;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    z-index: 1000;
+    height: 23vw;
+  }
+
+  /* Tablets & Mobile */
+  .tab-header {
+    font-size: 5vw;
+    text-align: center;
+  }
+
+  .tab-link {
+    background: #2f4f4f;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 2vw;
+    font-size: 4vw;
+    margin: 1vw;
+  }
+
+  .tab-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* TabBar styles */
+  .tab-bar {
+    position: fixed;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    padding: 10px 20px;
+    z-index: 1000;
+    height: 2vw;
+  }
+  /* Desktops */
+  .tab-header {
+    font-size: 1.5vw;
+  }
+
+  .tab-link {
+    font-size: 1vw;
+  }
+
+  .tab-links {
+    display: flex;
+    flex-shrink: inherit;
+    gap: 1vw;
+    height: 2vw;
+  }
+  .tab-link {
+    background: #2f4f4f;
+    border: none;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .tab-container {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
 }
