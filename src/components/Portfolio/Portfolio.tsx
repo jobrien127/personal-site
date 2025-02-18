@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Portfolio.css';
 
 interface Project {
@@ -45,6 +45,9 @@ const projects: Project[] = [
 ];
 
 const Portfolio: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section id="portfolio">
       <h2>Portfolio</h2>

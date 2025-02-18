@@ -17,17 +17,14 @@
 }
 
 @media (max-width: 768px) {
-  /* TabBar styles */
   .tab-bar {
     position: fixed;
     width: 100%;
     background-color: #333;
     display: flex;
     z-index: 1000;
-    height: 23vw;
+    height: 26vw;
   }
-
-  /* Tablets & Mobile */
   .tab-header {
     font-size: 5vw;
     text-align: center;
@@ -38,7 +35,11 @@
     color: whitesmoke;
     text-decoration: none;
     padding: 2vw;
-    font-size: 4vw;
+    border-color: darkgrey;
+    border-radius: 3px;
+    border-style: solid;
+    color: whitesmoke;
+    font-size: 5vw;
     margin: 1vw;
   }
 
@@ -50,23 +51,21 @@
 }
 
 @media (min-width: 1024px) {
-  /* TabBar styles */
   .tab-bar {
     position: fixed;
     width: 100%;
     background-color: #333;
     display: flex;
-    padding: 10px 20px;
     z-index: 1000;
-    height: 2vw;
+    height: 3vw;
+    padding-top: 1vw;
   }
-  /* Desktops */
   .tab-header {
     font-size: 1.5vw;
   }
 
   .tab-link {
-    font-size: 1vw;
+    font-size: 1.5vw;
   }
 
   .tab-links {
@@ -77,8 +76,11 @@
   }
   .tab-link {
     background: #2f4f4f;
-    border: none;
-    color: white;
+    padding: 0vw 1vw;
+    border-color: darkgrey;
+    border-radius: 3px;
+    border-style: solid;
+    color: whitesmoke;
     text-decoration: none;
     cursor: pointer;
   }

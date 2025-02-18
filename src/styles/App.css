@@ -9,7 +9,7 @@ html {
 
 .app .content {
   background-color: transparent;
-  margin-top: 2vw;
+  margin-top: 3vw;
 }
 
 @media (max-width: 768px) {

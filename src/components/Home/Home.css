@@ -28,8 +28,20 @@
 }
 
 .home-image {
-  max-width: 40%;
   height: auto;
   margin: 5px;
   border: 3px solid #2d8080;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .home-image {
+    max-width: 35vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-image {
+    max-width: 15vw;
+  }
 }
