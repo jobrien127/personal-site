@@ -18,10 +18,10 @@ const Home: React.FC = () => {
         and Software Engineer.
         <br />
       </p>
-      <p>
+      {/* <p>
         I hope you enjoy my website and learn a little bit about me.
         <br />
-      </p>
+      </p> */}
       <p>Feel free to contact me if you have any questions!</p>
     </section>
   );
