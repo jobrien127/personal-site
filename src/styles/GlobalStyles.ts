@@ -33,7 +33,10 @@ const GlobalStyles = createGlobalStyle`
     background-color: darkslategray;
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
+    padding: 15px;
+    max-width: 800px;
+    opacity: 0.9;
   }
 
   /* TabBar styles */
@@ -43,24 +46,31 @@ const GlobalStyles = createGlobalStyle`
     background-color: #333;
     display: flex;
     z-index: 1000;
+    padding: 10px 0 5px;
   }
 
   .tab-container {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
   }
 
   .tab-header {
     color: white;
     text-decoration: none;
-    padding-right: 1vw;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
   }
 
   .tab-links {
     display: flex;
+    justify-content: center;
     gap: 1vw;
+    width: 100%;
+    padding-bottom: 5px;
   }
 
   .tab-link {
@@ -71,6 +81,8 @@ const GlobalStyles = createGlobalStyle`
     border-radius: 3px;
     border-style: solid;
     cursor: pointer;
+    padding: 8px 16px;
+    font-size: 1.1rem;
   }
 
   .tab-link:hover {
@@ -84,11 +96,15 @@ const GlobalStyles = createGlobalStyle`
     color: #fff;
   }
 
-  /* Home styles */
-  #home {
+  /* Common styles for all pages */
+  #home, #portfolio, #resume, #contact {
     text-align: center;
+    max-width: 1200px;
+    margin: 100px auto 0;
+    padding: 0 20px;
   }
 
+  /* Home styles */
   #home p {
     font-size: 18px;
     line-height: 1.6;
@@ -107,10 +123,6 @@ const GlobalStyles = createGlobalStyle`
   }
 
   /* Portfolio styles */
-  #portfolio {
-    text-align: center;
-  }
-
   .projects {
     display: flex;
     flex-direction: column;
@@ -149,21 +161,6 @@ const GlobalStyles = createGlobalStyle`
   }
 
   /* Resume styles */
-  #resume {
-    text-align: center;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .resume-text {
-    background-color: darkslategray;
-    color: whitesmoke;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-
   .resume-frame {
     width: 100%;
     height: 800px;
@@ -190,15 +187,6 @@ const GlobalStyles = createGlobalStyle`
   }
 
   /* Contact styles */
-  #contact {
-    text-align: center;
-  }
-
-  #contact .contact-text {
-    background-color: darkslategray;
-    color: whitesmoke;
-  }
-
   #contact ul {
     list-style-type: none;
     padding: 10px;
@@ -238,26 +226,42 @@ const GlobalStyles = createGlobalStyle`
 
   /* Media Queries */
   @media (max-width: 768px) {
+    h2 {
+      font-size: 1.75rem;
+      padding: 12px;
+      margin: 0 10px 20px;
+    }
+
+    #home, #portfolio, #resume, #contact {
+      margin-top: 50px;
+      padding: 0 10px;
+    }
+
     .tab-bar {
-      height: 26vw;
+      height: auto;
+      padding: 8px 0 5px;
     }
 
     .tab-header {
-      font-size: 5vw;
+      font-size: 1.2rem;
+      padding: 5px 15px 8px;
+      text-align: center;
+    }
+
+    .tab-links {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      padding: 0 10px 5px;\
     }
 
     .tab-link {
-      padding: 2vw;
-      font-size: 5vw;
-      margin: 1vw;
+      padding: 8px 16px;
+      font-size: 1rem;
     }
 
     .home-image {
       max-width: 35vw;
-    }
-
-    #resume {
-      padding: 10px;
     }
 
     .resume-frame {
@@ -266,22 +270,28 @@ const GlobalStyles = createGlobalStyle`
   }
 
   @media (min-width: 1024px) {
+    #home, #portfolio, #resume, #contact {
+      margin-top: 60px;
+    }
+
     .tab-bar {
-      height: 3vw;
-      padding-top: 1vw;
+      height: auto;
+      min-height: 3vw;
+      padding: 10px 0 5px;
     }
 
     .tab-header {
       font-size: 1.5vw;
-    }
-
-    .tab-link {
-      font-size: 1.5vw;
-      padding: 0vw 1vw;
+      padding-bottom: 10px;
     }
 
     .tab-links {
-      height: 2vw;
+      padding-bottom: 5px;
+    }
+
+    .tab-link {
+      padding: 10px 20px;
+      font-size: 1.2rem;
     }
 
     .home-image {

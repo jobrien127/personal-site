@@ -22,9 +22,7 @@ const Contact: React.FC = () => {
         ]}
       />
       <section id="contact">
-        <div className="contact-text">
-          <h2>Contact Information</h2>
-        </div>
+        <h2>Contact Information</h2>
         <ul>
           <li>
             Email:{' '}
