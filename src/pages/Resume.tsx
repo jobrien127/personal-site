@@ -1,11 +1,9 @@
-import React, { useEffect } from 'react';
-import SEO from '../common/SEO';
-// import './Resume.css';
+import React from 'react';
+import SEO from '../components/common/SEO';
+import { useScrollToTop } from '../utils/hooks';
 
 const Resume: React.FC = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  useScrollToTop();
 
   return (
     <>
@@ -24,9 +22,7 @@ const Resume: React.FC = () => {
         ]}
       />
       <section id="resume">
-        <div className="resume-text">
-          <h2>Resume</h2>
-        </div>
+        <h2>Resume</h2>
 
         <iframe
           src="/assets/jmo_cv_se.pdf"

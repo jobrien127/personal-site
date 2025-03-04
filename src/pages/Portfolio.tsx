@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
-import SEO from '../common/SEO';
-import './Portfolio.css';
+import React from 'react';
+import SEO from '../components/common/SEO';
+import { useScrollToTop } from '../utils/hooks';
 
 interface Project {
   id: number;
@@ -46,9 +46,8 @@ const projects: Project[] = [
 ];
 
 const Portfolio: React.FC = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  useScrollToTop();
+
   return (
     <>
       <SEO

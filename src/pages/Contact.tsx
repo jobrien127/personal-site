@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react';
-import SEO from '../common/SEO';
-import './Contact.css';
+import React from 'react';
+import SEO from '../components/common/SEO';
+import { useScrollToTop } from '../utils/hooks';
 
 const Contact: React.FC = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  useScrollToTop();
+
   return (
     <>
       <SEO

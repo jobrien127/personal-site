@@ -1,7 +1,6 @@
 // src/components/Blog.tsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Blog.css';
 
 interface BlogPost {
   id: number;

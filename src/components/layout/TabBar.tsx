@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import './TabBar.css';
 
 const TabBar: React.FC = () => {
   const navigate = useNavigate();

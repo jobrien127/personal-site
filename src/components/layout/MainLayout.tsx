@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import TabBar from '../components/TabBar/TabBar';
-import Footer from '../components/Footer/Footer';
-import { LayoutProps } from '../types';
+import TabBar from './TabBar';
+import Footer from './Footer';
+import { LayoutProps } from '../../types';
 
 const LayoutWrapper = styled.div`
   display: flex;

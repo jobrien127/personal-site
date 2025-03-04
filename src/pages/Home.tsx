@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react';
-import SEO from '../common/SEO';
-import './Home.css';
+import React from 'react';
+import SEO from '../components/common/SEO';
+import { useScrollToTop } from '../utils/hooks';
 
 const Home: React.FC = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  useScrollToTop();
+
   return (
     <>
       <SEO
@@ -25,7 +24,7 @@ const Home: React.FC = () => {
       <section id="home">
         <h2>Welcome!</h2>
         <img
-          src="../../assets/portfolio_png/headshot.png"
+          src="/assets/portfolio_png/headshot.png"
           alt="Joseph O'Brien"
           className="home-image"
         />
