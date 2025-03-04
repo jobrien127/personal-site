@@ -25,6 +25,9 @@ const GlobalStyles = createGlobalStyle`
     color: whitesmoke;
     border: 1px solid #ddd;
     border-radius: 5px;
+    background-color: darkslategray;
+    text-align: center;
+    font-size: 2rem;
   }
 `;
 

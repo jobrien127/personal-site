@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import SEO from '../common/SEO';
 import './Portfolio.css';
 
 interface Project {
@@ -49,20 +50,36 @@ const Portfolio: React.FC = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <div className="projects">
-        {projects.map((project) => (
-          <div key={project.id} className="project" id="project">
-            <h3 className="project-title">{project.title}</h3>
-            <p className="project-description">{project.description}</p>
-            <a href={project.link} className="project-link">
-              Link to GitHub Repository
-            </a>
-          </div>
-        ))}
-      </div>
-    </section>
+    <>
+      <SEO
+        title="Portfolio"
+        description="Explore my software development projects, including web applications, games, and tools built with various technologies."
+        keywords={[
+          'portfolio',
+          'projects',
+          'software development',
+          'web applications',
+          'game development',
+          'GitHub',
+          'full stack',
+          'React',
+        ]}
+      />
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div className="projects">
+          {projects.map((project) => (
+            <div key={project.id} className="project" id="project">
+              <h3 className="project-title">{project.title}</h3>
+              <p className="project-description">{project.description}</p>
+              <a href={project.link} className="project-link">
+                Link to GitHub Repository
+              </a>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
   );
 };
 
