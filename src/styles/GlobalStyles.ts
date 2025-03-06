@@ -230,78 +230,73 @@ const GlobalStyles = createGlobalStyle`
     min-height: 60px;
   }
 
+  /* Photos styles */
+  #photos {
+    text-align: center;
+    max-width: 1200px;
+    margin: 100px auto 0;
+    padding: 0 20px;
+  }
+
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .gallery-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid #2d8080;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .gallery-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
   /* Media Queries */
-  @media (max-width: 768px) {
-    h2 {
-      font-size: 1.75rem;
-      padding: 12px;
-      margin: 0 10px 20px;
+  @media (min-width: 1024px) {
+    .image-container {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      padding: 30px 0;
     }
 
-    #home, #portfolio, #resume, #contact {
-      margin-top: 50px;
-      padding: 0 10px;
-    }
-
-    .tab-bar {
+    .gallery-image {
       height: auto;
-      padding: 8px 0 5px;
-    }
-
-    .tab-header {
-      font-size: 1.2rem;
-      padding: 5px 15px 8px;
-      text-align: center;
-    }
-
-    .tab-links {
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 8px;
-      padding: 0 10px 5px;\
-    }
-
-    .tab-link {
-      padding: 8px 16px;
-      font-size: 1rem;
-    }
-
-    .home-image {
-      max-width: 35vw;
-    }
-
-    .resume-frame {
-      height: 600px;
+      max-height: 400px;
+      object-fit: contain;
+      background-color: #273838;
+      padding: 10px;
     }
   }
 
-  @media (min-width: 1024px) {
-    #home, #portfolio, #resume, #contact {
-      margin-top: 60px;
+  @media (max-width: 768px) {
+    .image-container {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 15px 0;
     }
 
-    .tab-bar {
-      height: auto;
-      min-height: 3vw;
-      padding: 10px 0 5px;
+    .gallery-image {
+      height: 250px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .image-container {
+      grid-template-columns: 1fr;
+      gap: 15px;
     }
 
-    .tab-header {
-      font-size: 1.5vw;
-      padding-bottom: 10px;
-    }
-
-    .tab-links {
-      padding-bottom: 5px;
-    }
-
-    .tab-link {
-      padding: 10px 20px;
-      font-size: 1.2rem;
-    }
-
-    .home-image {
-      max-width: 15vw;
+    .gallery-image {
+      height: 300px;
     }
   }
 `;

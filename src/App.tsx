@@ -14,7 +14,7 @@ const Portfolio = React.lazy(() => import('./pages/Portfolio'));
 const Contact = React.lazy(() => import('./pages/Contact'));
 // const About = React.lazy(() => import('./pages/About'));
 // const Blog = React.lazy(() => import('./pages/Blog'));
-// const Photos = React.lazy(() => import('./pages/Photos'));
+const Photos = React.lazy(() => import('./pages/Photos'));
 
 const App: React.FC = () => {
   return (
@@ -29,9 +29,9 @@ const App: React.FC = () => {
                 <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="/resume" element={<Resume />} />
                 <Route path="/contact" element={<Contact />} />
-                {/* <Route path="/about" element={<About />} />
+                {/* <Route path="/about" element={<About />} /> */}
                 <Route path="/photos" element={<Photos />} />
-                <Route path="/blog" element={<Blog />} /> */}
+                {/* <Route path="/blog" element={<Blog />} /> */}
               </Routes>
             </AnimatePresence>
           </Suspense>

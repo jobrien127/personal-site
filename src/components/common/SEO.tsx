@@ -12,7 +12,7 @@ const SEO: React.FC<SEOProps> = ({
   title,
   description,
   keywords = [],
-  ogImage = '/assets/portfolio_png/headshot.png',
+  ogImage = '/assets/photos/headshot.png',
 }) => {
   const siteTitle = `${title} | Joseph O'Brien - Software Engineer`;
 

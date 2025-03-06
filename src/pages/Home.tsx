@@ -24,7 +24,7 @@ const Home: React.FC = () => {
       <section id="home">
         <h2>Welcome!</h2>
         <img
-          src="/assets/portfolio_png/headshot.png"
+          src="/assets/photos/headshot.png"
           alt="Joseph O'Brien"
           className="home-image"
         />

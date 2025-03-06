@@ -8,7 +8,7 @@ const LayoutWrapper = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url('/assets/portfolio_bg/bg5.png');
+  background-image: url('/assets/bg_photos/bg5.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
