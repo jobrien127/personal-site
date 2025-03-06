@@ -154,6 +154,12 @@ const GlobalStyles = createGlobalStyle`
     color: #8d7df5;
     text-decoration: none;
     font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .project-link:last-child {
+    margin-bottom: 0;
   }
 
   .project-link:hover {
