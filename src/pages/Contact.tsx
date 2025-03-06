@@ -25,14 +25,13 @@ const Contact: React.FC = () => {
         <h2>Contact Information</h2>
         <ul>
           <li>
-            Email:{' '}
-            <a href="mailto:jmobrien127@gmail.com">jmobrien127@gmail.com</a>
+            Email: <a href="mailto:dev@jm-ob.com">dev@jm-ob.com</a>
           </li>
           <li>Phone: +1 (209) 534-5372</li>
           <li>
             LinkedIn:{' '}
             <a
-              href="https://www.linkedin.com/in/joseph-obrien-387a721a3"
+              href="https://www.linkedin.com/in/j-m-obrien"
               target="_blank"
               rel="noopener noreferrer"
             >

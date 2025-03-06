@@ -109,7 +109,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: 18px;
     line-height: 1.6;
     color: whitesmoke;
-    background-color: darkslategray;
+    background-color: #273838;
     margin-bottom: 3%;
     opacity: 0.9;
     border: 1px solid #ddd;
@@ -154,8 +154,6 @@ const GlobalStyles = createGlobalStyle`
     color: #8d7df5;
     text-decoration: none;
     font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
   }
 
   .project-link:hover {
@@ -193,7 +191,7 @@ const GlobalStyles = createGlobalStyle`
     list-style-type: none;
     padding: 10px;
     font-size: 1.5em;
-    background-color: darkslategray;
+    background-color: #273838;
     color: whitesmoke;
     opacity: 0.9;
     border: 1px solid #ddd;

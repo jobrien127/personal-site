@@ -38,6 +38,11 @@ const Home: React.FC = () => {
           <br />
         </p> */}
         <p>Feel free to contact me if you have any questions!</p>
+        <p>
+          “You can&apos;t stop the waves, but you can learn to surf.” - Alan
+          Watts
+          <br />
+        </p>
       </section>
     </>
   );
