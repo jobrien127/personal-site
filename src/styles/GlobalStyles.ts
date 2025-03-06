@@ -154,6 +154,8 @@ const GlobalStyles = createGlobalStyle`
     color: #8d7df5;
     text-decoration: none;
     font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
   }
 
   .project-link:hover {
