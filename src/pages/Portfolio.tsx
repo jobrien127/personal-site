@@ -13,7 +13,7 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: 'Pantry iOS App',
+    title: 'Pantry iOS App (Work in Progress)',
     description:
       'A modern iOS app for smart pantry management, helping to track groceries, manage expiration dates, and receive intelligent suggestions based on purchasing habits. (Not on App Store yet)',
     link: 'https://github.com/jobrien127/pantry',
