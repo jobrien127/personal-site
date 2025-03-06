@@ -13,18 +13,25 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
+    title: 'Pantry iOS App',
+    description:
+      'A modern iOS app for smart pantry management, helping to track groceries, manage expiration dates, and receive intelligent suggestions based on purchasing habits. (Not on App Store yet)',
+    link: 'https://github.com/jobrien127/pantry',
+  },
+  {
+    id: 2,
     title: 'Personal Website',
     description: 'Repository for this website.',
     link: 'https://github.com/jobrien127/personal-site',
   },
   {
-    id: 2,
+    id: 3,
     title: '30XX Arena Survival',
     description: 'A 2D game created with GameMaker Studio.',
     link: 'https://github.com/jobrien127/30XX_Arena_Survival',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Python Playground',
     description:
       'A python playground for experiementing with machine learning and AI implementations.',
@@ -38,28 +45,28 @@ const projects: Project[] = [
     link: 'https://github.com/jobrien127/tempo',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Zodiac Sign Calculator',
     description:
       'Ruby program that calculates your zodiac sign based on your birthdate.',
     link: 'https://github.com/jobrien127/zodiac-sign-calculator',
   },
   {
-    id: 6,
+    id: 7,
     title: 'Markov Chain Text Generator',
     description:
       'Ruby program that generates text based on a given input text file.',
     link: 'https://github.com/jobrien127/markov-text-generator',
   },
   {
-    id: 7,
+    id: 8,
     title: 'Home Again Website (Work in Progress)',
     description:
       "Codebase for a website I'm building for my Mother's small business.",
     link: 'https://github.com/jobrien127/home-again',
   },
   {
-    id: 8,
+    id: 9,
     title: 'lemmonlodge.com',
     description: "Codebase for a website I built for my Uncle's idle domain.",
     link: 'https://github.com/jobrien127/lemmon-lodge',
