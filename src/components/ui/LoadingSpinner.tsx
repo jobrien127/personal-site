@@ -24,7 +24,7 @@ const Spinner = styled.div`
   animation: ${spin} 1s linear infinite;
 `;
 
-const LoadingSpinner: React.FC = () => {
+const LoadingSpinner: React.FC = React.memo(() => {
   return (
     <SpinnerWrapper
       initial={{ opacity: 0 }}
@@ -35,6 +35,8 @@ const LoadingSpinner: React.FC = () => {
       <Spinner />
     </SpinnerWrapper>
   );
-};
+});
+
+LoadingSpinner.displayName = 'LoadingSpinner';
 
 export default LoadingSpinner;
