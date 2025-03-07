@@ -22,16 +22,16 @@ const Home: React.FC = () => {
         ]}
       />
       <section id="home">
-        <h2>Welcome!</h2>
+        <h2>Home</h2>
         <img
           src="/assets/photos/headshot.png"
           alt="Joseph O'Brien"
           className="home-image"
         />
+        <p>Hello and welcome to my website!</p>
         <p>
-          Hello! My name is Joseph (Mac) O&apos;Brien and I am an App Developer
-          and Software Engineer.
-          <br />
+          My name is Joseph &quot;Mac&quot; O&apos;Brien and I am an App
+          Developer and Software Engineer.
         </p>
         {/* <p>
           I hope you enjoy my website and learn a little bit about me.
@@ -41,7 +41,6 @@ const Home: React.FC = () => {
         <p>
           “You can&apos;t stop the waves, but you can learn to surf.” - Alan
           Watts
-          <br />
         </p>
       </section>
     </>
