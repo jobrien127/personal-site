@@ -267,21 +267,13 @@ const GlobalStyles = createGlobalStyle`
     height: auto;
     display: block;
     margin-bottom: 15px;
-    break-inside: avoid;
     border-radius: 6px;
     border: 2px solid #2d8080;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
     cursor: pointer;
     background-color: #273838;
     padding: 8px;
   }
 
-  .gallery-image:hover {
-    transform: scale(1.03);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  }
-
-  /* Media Queries */
   @media (min-width: 1024px) {
     .image-container {
       columns: 4;
