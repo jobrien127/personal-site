@@ -117,10 +117,12 @@ const GlobalStyles = createGlobalStyle`
   }
 
   /* Home styles */
-  #home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .home-image {
+    height: auto;
+    max-width: 300px;
+    border: 3px solid #2d8080;
+    margin: 20px auto;
+    display: block;
   }
 
   #home p {
@@ -134,13 +136,8 @@ const GlobalStyles = createGlobalStyle`
     border-radius: 5px;
     padding: 15px;
     max-width: 800px;
-  }
-
-  .home-image {
-    height: auto;
-    max-width: 300px;
-    border: 3px solid #2d8080;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* Portfolio styles */
