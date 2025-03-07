@@ -39,7 +39,7 @@ const Contact: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Joseph O&apos;Brien
+              Joseph &quot;Mac&quot; O&apos;Brien
             </a>
           </div>
           <div className="contact-card">

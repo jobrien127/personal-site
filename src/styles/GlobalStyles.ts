@@ -163,7 +163,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .project-link {
-    color: #8d7df5;
+    color: #ad8dff;
     text-decoration: none;
     font-weight: bold;
     display: block;
@@ -176,6 +176,7 @@ const GlobalStyles = createGlobalStyle`
 
   .project-link:hover {
     text-decoration: underline;
+    color: #ffd902;
   }
 
   /* Resume styles */
@@ -205,27 +206,20 @@ const GlobalStyles = createGlobalStyle`
   }
 
   /* Contact styles */
-  .contact-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 0 15px;
-    max-width: 800px;
-    margin: 0 auto;
-  }
 
   .contact-card {
-    background-color: #273838;
+    font-size: 18px;
+    line-height: 1.6;
     color: whitesmoke;
+    background-color: #273838;
+    margin-bottom: 3%;
+    opacity: 0.9;
     border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 20px;
-    opacity: 0.9;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    width: 100%;
+    padding: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .contact-card:hover {
@@ -240,17 +234,19 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .contact-card a {
-    color: whitesmoke;
+    color: #ad8dff;
     text-decoration: none;
     font-size: 1.1em;
   }
 
   .contact-card a:hover {
     text-decoration: underline;
+    color: #ffd902;
   }
 
   .contact-card span {
     font-size: 1.1em;
+    color: #fffde9;
   }
 
   /* Footer styles */
