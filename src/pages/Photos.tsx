@@ -31,6 +31,21 @@ const Photos: React.FC = () => {
           className="gallery-image"
         />
         <img
+          src="/assets/photos/fsu.png"
+          alt="Another Pebble Beach view"
+          className="gallery-image"
+        />
+        <img
+          src="/assets/photos/jensen.png"
+          alt="Yet another Pebble Beach view"
+          className="gallery-image"
+        />
+        <img
+          src="/assets/photos/mom.png"
+          alt="Graduation day"
+          className="gallery-image"
+        />
+        <img
           src="/assets/photos/amsterdam.png"
           alt="Amsterdam cityscape"
           className="gallery-image"
@@ -56,7 +71,7 @@ const Photos: React.FC = () => {
           className="gallery-image"
         />
         <img
-          src="/assets/photos/springdisc.png"
+          src="/assets/photos/skiing.png"
           alt="Spring disc golf"
           className="gallery-image"
         />
@@ -71,6 +86,11 @@ const Photos: React.FC = () => {
           className="gallery-image"
         />
         <img
+          src="/assets/photos/mom3.png"
+          alt="Paris cityscape"
+          className="gallery-image"
+        />
+        <img
           src="/assets/photos/gooma.png"
           alt="Gooma portrait"
           className="gallery-image"
@@ -80,7 +100,6 @@ const Photos: React.FC = () => {
           alt="Gabby in tuxedo"
           className="gallery-image"
         />
-
         <img
           src="/assets/photos/dub2.png"
           alt="Old town Dubrovnik"
