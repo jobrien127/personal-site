@@ -20,11 +20,6 @@ const GlobalStyles = createGlobalStyle`
     scroll-behavior: smooth;
   }
 
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-  }
-
   /* Common styles */
   h2 {
     color: whitesmoke;
@@ -41,8 +36,8 @@ const GlobalStyles = createGlobalStyle`
 
   /* TabBar styles */
   :root {
-    --tab-bar-height: calc(1rem + 25px); /* Base height for tab bar (header + links + padding) */
-    --content-spacing: 0rem; /* Additional spacing below tab bar */
+    --tab-bar-height: calc(1rem + 25px);
+    --content-spacing: 0rem;
   }
 
   .tab-bar {
@@ -108,10 +103,9 @@ const GlobalStyles = createGlobalStyle`
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 clamp(1rem, 3vw, 2rem); /* Responsive padding */
+    padding: 0 clamp(1rem, 3vw, 2rem);
   }
 
-  /* Add responsive top margin for all pages */
   section {
     margin-top: calc(var(--tab-bar-height) + var(--content-spacing)) !important;
   }
@@ -211,27 +205,6 @@ const GlobalStyles = createGlobalStyle`
   }
 
   /* Contact styles */
-  #contact ul {
-    list-style-type: none;
-    padding: 10px;
-    font-size: 1.5em;
-    background-color: #273838;
-    color: whitesmoke;
-    opacity: 0.9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 0;
-  }
-
-  #contact li {
-    margin-bottom: 10px;
-  }
-
-  #contact a {
-    color: #8d7df5;
-    text-decoration: underline;
-  }
-
   .contact-cards {
     display: flex;
     flex-direction: column;
@@ -280,27 +253,6 @@ const GlobalStyles = createGlobalStyle`
     font-size: 1.1em;
   }
 
-  @media (max-width: 768px) {
-    .contact-cards {
-      grid-template-columns: 1fr;
-      gap: 15px;
-      padding: 0 10px;
-    }
-
-    .contact-card {
-      padding: 15px;
-    }
-
-    .contact-card h3 {
-      font-size: 1.2em;
-    }
-
-    .contact-card a,
-    .contact-card span {
-      font-size: 1em;
-    }
-  }
-
   /* Footer styles */
   .footer {
     background-color: #333;
@@ -343,7 +295,13 @@ const GlobalStyles = createGlobalStyle`
     padding: 12px;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
   }
+    
+  .gallery-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
+  }
 
+  /* Media Queries */
   @media (min-width: 1024px) {
     .image-container {
       columns: 4;
@@ -352,11 +310,6 @@ const GlobalStyles = createGlobalStyle`
   }
 
   @media (max-width: 768px) {
-    :root {
-      --tab-bar-height: calc(1rem + 25px);
-      --content-spacing: 0rem;
-    }
-
     .tab-bar {
       height: auto;
       padding: 8px 0;
@@ -375,10 +328,6 @@ const GlobalStyles = createGlobalStyle`
     .tab-link {
       padding: 6px 12px;
       font-size: 0.9rem;
-    }
-
-    section {
-      margin-top: calc(var(--tab-bar-height) + var(--content-spacing)) !important;
     }
 
     h2 {
@@ -407,14 +356,27 @@ const GlobalStyles = createGlobalStyle`
       margin-bottom: 20px;
       padding: 8px;
     }
+
+    .contact-cards {
+      gap: 15px;
+      padding: 0 10px;
+    }
+
+    .contact-card {
+      padding: 15px;
+    }
+
+    .contact-card h3 {
+      font-size: 1.2em;
+    }
+
+    .contact-card a,
+    .contact-card span {
+      font-size: 1em;
+    }
   }
 
   @media (max-width: 480px) {
-    :root {
-      --tab-bar-height: calc(1rem + 25px);
-      --content-spacing: 0rem;
-    }
-
     .tab-links {
       gap: 4px;
       padding: 0 4px 5px;
