@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
+import { motion } from 'framer-motion';
 
 interface Photo {
   src: string;
@@ -69,17 +70,33 @@ const photos: Photo[] = [
 ];
 
 const Photos: React.FC = () => {
+  const [loadedImages, setLoadedImages] = useState<Set<number>>(new Set());
+
+  const handleImageLoad = useCallback((index: number) => {
+    setLoadedImages((prev) => new Set(prev).add(index));
+  }, []);
+
   return (
     <section id="photos">
       <h2>Photos</h2>
       <div className="image-container">
         {photos.map((photo, index) => (
-          <img
+          <motion.div
             key={index}
-            src={photo.src}
-            alt={photo.alt}
-            className="gallery-image"
-          />
+            initial={{ opacity: 0 }}
+            animate={{ opacity: loadedImages.has(index) ? 1 : 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <img
+              src={photo.src}
+              alt={photo.alt}
+              className="gallery-image"
+              loading="lazy"
+              onLoad={() => handleImageLoad(index)}
+              width="400"
+              height="300"
+            />
+          </motion.div>
         ))}
       </div>
     </section>
