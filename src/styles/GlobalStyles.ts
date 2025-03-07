@@ -272,6 +272,12 @@ const GlobalStyles = createGlobalStyle`
     cursor: pointer;
     background-color: #273838;
     padding: 8px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+
+  .gallery-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
   }
 
   @media (min-width: 1024px) {
