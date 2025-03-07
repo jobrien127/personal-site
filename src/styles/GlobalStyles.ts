@@ -40,6 +40,11 @@ const GlobalStyles = createGlobalStyle`
   }
 
   /* TabBar styles */
+  :root {
+    --tab-bar-height: calc(1rem + 25px); /* Base height for tab bar (header + links + padding) */
+    --content-spacing: 0rem; /* Additional spacing below tab bar */
+  }
+
   .tab-bar {
     position: fixed;
     width: 100%;
@@ -68,9 +73,10 @@ const GlobalStyles = createGlobalStyle`
   .tab-links {
     display: flex;
     justify-content: center;
-    gap: 1vw;
+    flex-wrap: wrap;
+    gap: 8px;
     width: 100%;
-    padding-bottom: 5px;
+    padding: 0 10px 5px;
   }
 
   .tab-link {
@@ -83,6 +89,7 @@ const GlobalStyles = createGlobalStyle`
     cursor: pointer;
     padding: 8px 16px;
     font-size: 1.1rem;
+    min-width: fit-content;
   }
 
   .tab-link:hover {
@@ -96,15 +103,30 @@ const GlobalStyles = createGlobalStyle`
     color: #fff;
   }
 
-  /* Common styles for all pages */
-  #home, #portfolio, #resume, #contact {
+  /* Common page styles */
+  #home, #portfolio, #resume, #contact, #photos {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 clamp(1rem, 3vw, 2rem); /* Responsive padding */
+  }
+
+  /* Add responsive top margin for all pages */
+  section {
+    margin-top: calc(var(--tab-bar-height) + var(--content-spacing)) !important;
+  }
+
+  /* Home styles */
+  #home {
     text-align: center;
     max-width: 1200px;
     margin: 100px auto 0;
     padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  /* Home styles */
   #home p {
     font-size: 18px;
     line-height: 1.6;
@@ -115,11 +137,14 @@ const GlobalStyles = createGlobalStyle`
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 15px;
+    max-width: 800px;
   }
 
   .home-image {
     height: auto;
+    max-width: 200px;
     border: 3px solid #2d8080;
+    margin: 0 auto;
   }
 
   /* Portfolio styles */
@@ -278,6 +303,52 @@ const GlobalStyles = createGlobalStyle`
   }
 
   @media (max-width: 768px) {
+    :root {
+      --tab-bar-height: calc(1rem + 25px); /* Smaller height for mobile */
+      --content-spacing: 0rem;
+    }
+
+    .tab-bar {
+      height: auto;
+      padding: 8px 0;
+    }
+
+    .tab-header {
+      font-size: 1.2rem;
+      padding: 5px 10px 8px;
+    }
+
+    .tab-links {
+      gap: 6px;
+      padding: 0 6px 5px;
+    }
+
+    .tab-link {
+      padding: 6px 12px;
+      font-size: 0.9rem;
+    }
+
+    /* Adjust top margin for mobile */
+    section {
+      margin-top: calc(var(--tab-bar-height) + var(--content-spacing)) !important;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+      padding: 12px;
+      margin: 0 auto 20px;
+    }
+
+    .home-image {
+      max-width: 150px;
+      margin: 0 auto 20px;
+    }
+
+    #home p {
+      font-size: 16px;
+      padding: 12px;
+    }
+
     .image-container {
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 15px;
@@ -290,6 +361,21 @@ const GlobalStyles = createGlobalStyle`
   }
 
   @media (max-width: 480px) {
+    :root {
+      --tab-bar-height: calc(1rem + 25px); /* Even smaller for very small devices */
+      --content-spacing: 0rem;
+    }
+
+    .tab-links {
+      gap: 4px;
+      padding: 0 4px 5px;
+    }
+
+    .tab-link {
+      padding: 5px 10px;
+      font-size: 0.85rem;
+    }
+
     .image-container {
       grid-template-columns: 1fr;
       gap: 15px;
