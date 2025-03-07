@@ -23,13 +23,17 @@ const Contact: React.FC = () => {
       />
       <section id="contact">
         <h2>Contact Information</h2>
-        <ul>
-          <li>
-            Email: <a href="mailto:dev@jm-ob.com">dev@jm-ob.com</a>
-          </li>
-          <li>Phone: +1 (209) 534-5372</li>
-          <li>
-            LinkedIn:{' '}
+        <div className="contact-cards">
+          <div className="contact-card">
+            <h3>Email</h3>
+            <a href="mailto:dev@jm-ob.com">dev@jm-ob.com</a>
+          </div>
+          <div className="contact-card">
+            <h3>Phone</h3>
+            <span>+1 (209) 534-5372</span>
+          </div>
+          <div className="contact-card">
+            <h3>LinkedIn</h3>
             <a
               href="https://www.linkedin.com/in/j-m-obrien"
               target="_blank"
@@ -37,9 +41,9 @@ const Contact: React.FC = () => {
             >
               Joseph O&apos;Brien
             </a>
-          </li>
-          <li>
-            GitHub:{' '}
+          </div>
+          <div className="contact-card">
+            <h3>GitHub</h3>
             <a
               href="https://github.com/jobrien127"
               target="_blank"
@@ -47,8 +51,8 @@ const Contact: React.FC = () => {
             >
               jobrien127
             </a>
-          </li>
-        </ul>
+          </div>
+        </div>
       </section>
     </>
   );

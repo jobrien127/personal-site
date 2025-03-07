@@ -232,6 +232,75 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: underline;
   }
 
+  .contact-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 15px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .contact-card {
+    background-color: #273838;
+    color: whitesmoke;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+  }
+
+  .contact-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .contact-card h3 {
+    margin: 0 0 15px 0;
+    color: whitesmoke;
+    font-size: 1.3em;
+  }
+
+  .contact-card a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.1em;
+  }
+
+  .contact-card a:hover {
+    text-decoration: underline;
+  }
+
+  .contact-card span {
+    font-size: 1.1em;
+  }
+
+  @media (max-width: 768px) {
+    .contact-cards {
+      grid-template-columns: 1fr;
+      gap: 15px;
+      padding: 0 10px;
+    }
+
+    .contact-card {
+      padding: 15px;
+    }
+
+    .contact-card h3 {
+      font-size: 1.2em;
+    }
+
+    .contact-card a,
+    .contact-card span {
+      font-size: 1em;
+    }
+  }
+
   /* Footer styles */
   .footer {
     background-color: #333;
