@@ -100,11 +100,21 @@ const Portfolio: React.FC = () => {
             <div key={project.id} className="project" id="project">
               <h3 className="project-title">{project.title}</h3>
               <p className="project-description">{project.description}</p>
-              <a href={project.link} className="project-link">
+              <a
+                href={project.link}
+                className="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Link to GitHub Repository
               </a>
               {project.sitelink && (
-                <a href={project.sitelink} className="project-link">
+                <a
+                  href={project.sitelink}
+                  className="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Link to Live Site
                 </a>
               )}
