@@ -253,16 +253,71 @@ const GlobalStyles = createGlobalStyle`
   .footer {
     background-color: #333;
     color: white;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
+    padding: 40px 20px 20px;
     width: 100%;
-    font-size: 0.9rem;
     box-sizing: border-box;
+  }
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
+    gap: 60px;
+    margin-bottom: 30px;
+  }
+
+  .footer-section {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    min-height: 60px;
+    gap: 10px;
+  }
+
+  .footer-section h4 {
+    color: #fff;
+    margin: 0 0 10px;
+    font-size: 1.1rem;
+  }
+
+  .footer-section a,
+  .footer-section span {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+  }
+
+  .footer-section a:hover {
+    color: #fff;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+  }
+
+  .footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #999;
+  }
+
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      gap: 30px;
+    }
+    
+    .footer {
+      padding: 30px 15px 15px;
+    }
   }
 
   /* Photos styles */
