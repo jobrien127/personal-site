@@ -206,6 +206,13 @@ const GlobalStyles = createGlobalStyle`
   }
 
   /* Contact styles */
+  .contact-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
 
   .contact-card {
     font-size: 18px;
@@ -217,9 +224,7 @@ const GlobalStyles = createGlobalStyle`
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 15px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
 
   .contact-card:hover {
@@ -307,17 +312,6 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     font-size: 0.9rem;
     color: #999;
-  }
-
-  @media (max-width: 768px) {
-    .footer-content {
-      flex-direction: column;
-      gap: 30px;
-    }
-    
-    .footer {
-      padding: 30px 15px 15px;
-    }
   }
 
   /* Photos styles */
@@ -424,6 +418,15 @@ const GlobalStyles = createGlobalStyle`
     .contact-card a,
     .contact-card span {
       font-size: 1em;
+    }
+
+    .footer-content {
+      flex-direction: column;
+      gap: 30px;
+    }
+    
+    .footer {
+      padding: 30px 15px 15px;
     }
   }
 
