@@ -99,7 +99,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   /* Common page styles */
-  #home, #portfolio, #resume, #contact, #photos {
+  #home, #portfolio, #resume, #contact, #photos, #not-found {
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -108,6 +108,41 @@ const GlobalStyles = createGlobalStyle`
 
   section {
     margin-top: calc(var(--tab-bar-height) + var(--content-spacing)) !important;
+  }
+
+  /* Not Found Page styles */
+  .not-found-content {
+    font-size: 18px;
+    line-height: 1.6;
+    color: whitesmoke;
+    background-color: #273838;
+    margin-bottom: 3%;
+    opacity: 0.9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .home-link {
+    display: inline-block;
+    background-color: darkslategray;
+    color: whitesmoke;
+    padding: 12px 24px;
+    margin-top: 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+
+  .home-link:hover {
+    background-color: #2f4f4f;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
 
   /* Home styles */

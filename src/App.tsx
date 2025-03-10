@@ -8,10 +8,11 @@ import GlobalStyles from './styles/GlobalStyles';
 
 // Lazy loaded pages
 const Home = React.lazy(() => import('./pages/Home'));
-const About = React.lazy(() => import('./pages/About'));
+// const About = React.lazy(() => import('./pages/About'));
 const Resume = React.lazy(() => import('./pages/Resume'));
 const Portfolio = React.lazy(() => import('./pages/Portfolio'));
 const Photos = React.lazy(() => import('./pages/Photos'));
+const NotFound = React.lazy(() => import('./pages/NotFound'));
 
 const App: React.FC = () => {
   return (
@@ -23,10 +24,12 @@ const App: React.FC = () => {
             <AnimatePresence mode="wait">
               <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
+                {/* <Route path="/about" element={<About />} /> */}
                 <Route path="/resume" element={<Resume />} />
                 <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="/photos" element={<Photos />} />
+                {/* This is the catch-all route that will display for any undefined paths */}
+                <Route path="*" element={<NotFound />} />
               </Routes>
             </AnimatePresence>
           </Suspense>
