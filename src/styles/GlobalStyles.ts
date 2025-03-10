@@ -37,7 +37,7 @@ const GlobalStyles = createGlobalStyle`
   /* TabBar styles */
   :root {
     --tab-bar-height: calc(1rem + 25px);
-    --content-spacing: 0rem;
+    --content-spacing: 1rem;
   }
 
   .tab-bar {
@@ -257,8 +257,7 @@ const GlobalStyles = createGlobalStyle`
   /* Footer styles */
   .footer {
     background-color: #333;
-    color: white;
-    padding: 40px 20px 20px;
+    padding: 20px 20px 20px;
     width: 100%;
     box-sizing: border-box;
   }
@@ -281,13 +280,13 @@ const GlobalStyles = createGlobalStyle`
 
   .footer-section h4 {
     color: #fff;
-    margin: 0 0 10px;
+    margin: 0 0 0px;
     font-size: 1.1rem;
   }
 
   .footer-section a,
-  .footer-section span {
-    color: #ccc;
+  .footer-section {
+    color: #b79cfd;
     text-decoration: none;
     font-size: 0.95rem;
     transition: color 0.2s ease;
@@ -295,6 +294,7 @@ const GlobalStyles = createGlobalStyle`
 
   .footer-section a:hover {
     color: #fff;
+    text-decoration: underline;
   }
 
   .social-links {

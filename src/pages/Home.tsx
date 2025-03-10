@@ -37,7 +37,10 @@ const Home: React.FC = () => {
           I hope you enjoy my website and learn a little bit about me.
           <br />
         </p> */}
-        <p>Feel free to contact me if you have any questions!</p>
+        <p>
+          If you have any questions or just want to chat, feel free to reach out
+          using the contact methods at the bottom of the page!
+        </p>
         <p>
           “You can&apos;t stop the waves, but you can learn to surf.” - Alan
           Watts
