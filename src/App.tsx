@@ -15,14 +15,12 @@ import GlobalStyles from './styles/GlobalStyles';
 const Home = React.lazy(() => import('./pages/Home'));
 const Resume = React.lazy(() => import('./pages/Resume'));
 const Portfolio = React.lazy(() => import('./pages/Portfolio'));
-const Contact = React.lazy(() => import('./pages/Contact'));
 const Photos = React.lazy(() => import('./pages/Photos'));
 
 // Preload functions
 const preloadHome = () => import('./pages/Home');
 const preloadResume = () => import('./pages/Resume');
 const preloadPortfolio = () => import('./pages/Portfolio');
-const preloadContact = () => import('./pages/Contact');
 const preloadPhotos = () => import('./pages/Photos');
 
 const PreloadManager: React.FC = () => {
@@ -36,13 +34,11 @@ const PreloadManager: React.FC = () => {
         preloadResume();
         break;
       case '/portfolio':
-        preloadHome(); // Add usage here
-        preloadContact();
+        preloadHome();
         preloadPhotos();
         break;
       case '/resume':
-        preloadHome(); // Add usage here
-        preloadContact();
+        preloadHome();
         break;
       default:
         break;
@@ -65,7 +61,6 @@ const App: React.FC = () => {
                 <Route path="/" element={<Home />} />
                 <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="/resume" element={<Resume />} />
-                <Route path="/contact" element={<Contact />} />
                 <Route path="/photos" element={<Photos />} />
               </Routes>
             </AnimatePresence>
