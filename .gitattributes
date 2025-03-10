@@ -1,2 +1,0 @@
-public/assets/bg_photos/* filter=lfs diff=lfs merge=lfs -text
-public/assets/photos/* filter=lfs diff=lfs merge=lfs -text
