@@ -15,6 +15,14 @@ const photos: Photo[] = [
     src: '/assets/photos/abaydisc.png',
     alt: 'Playing disc golf at Arapahoe Basin',
   },
+  {
+    src: '/assets/photos/sisters.png',
+    alt: "My sisters and I at our cousin's wedding",
+  },
+  {
+    src: '/assets/photos/sisters.png',
+    alt: "My sisters and I at our cousin's wedding",
+  },
   { src: '/assets/photos/gooma.png', alt: 'My Grandma and I' },
   { src: '/assets/photos/graduation.png', alt: 'My Graduation ceremony' },
   { src: '/assets/photos/archie.png', alt: 'Archie the dog and I' },
@@ -22,13 +30,7 @@ const photos: Photo[] = [
     src: '/assets/photos/arizona.png',
     alt: 'My Dad and I mountain biking in Arizona',
   },
-  {
-    src: '/assets/photos/sisters.png',
-    alt: "My sisters and I at our cousin's wedding",
-  },
-  { src: '/assets/photos/wedding.png', alt: 'My brother-in-law and I' },
   { src: '/assets/photos/fsu.png', alt: 'Fresno State Bowl Game in Vegas' },
-
   { src: '/assets/photos/jensen.png', alt: 'Lube Room Bar with my friend' },
   { src: '/assets/photos/mom.png', alt: 'Photo Booth with my Mom' },
   { src: '/assets/photos/amsterdam.png', alt: 'Amsterdam boat ride' },
@@ -50,14 +52,13 @@ const photos: Photo[] = [
     src: '/assets/photos/mom3.png',
     alt: 'Another Photobooth picture with my Mom',
   },
-
   { src: '/assets/photos/gabbytux.png', alt: 'Gabby with me in tuxedo' },
   { src: '/assets/photos/dub2.png', alt: 'Old town Dubrovnik' },
   {
     src: '/assets/photos/bench.png',
     alt: 'On the bench with grandparents after graduating',
   },
-
+  { src: '/assets/photos/wedding.png', alt: 'My brother-in-law and I' },
   {
     src: '/assets/photos/morningbells.png',
     alt: 'Morning at the Maroon Bells landscape',
