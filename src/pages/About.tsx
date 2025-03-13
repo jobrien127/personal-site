@@ -5,38 +5,35 @@ const About: React.FC = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const background = `My name is Joseph McGettigan O'Brien. I get "Mac" from
-          my middle name. I was born and raised in Modesto, California, the home
-          of George Lucas and American Graffiti. This is something I have been
-          proud of since the first time I watched Star Wars on VHS as a kid. Modesto was
-          an interesting place to grow up, being surrounded by some of the most
-          productive farmland in the world and sandwhiched between the Bay Area
-          and the Sierra Nevada mountains. Modesto's close proximity to Silicon 
-          Valley drove me to become curious about the computing industry which 
-          seemed to mature and grow as I did.`;
+  const background = `My name is Joseph McGettigan O'Brien, but I go by Mac, a nickname 
+  derived from my middle name. I was born and raised in Modesto, California, the hometown 
+  of George Lucas and American Graffiti. When I first watched Star Wars on VHS as a kid, I 
+  was shocked and proud to learn that something so incredible came from a fellow Modestan. 
+  Growing up in Modesto was a unique experience—surrounded by some of the most productive 
+  farmland in the world while being sandwiched between the Bay Area and the Sierra Nevada 
+  mountains. Its proximity to Silicon Valley fueled my curiosity about the computing 
+  industry, which seemed to mature and evolve alongside me.`;
 
-  const education = `I Moved to Golden, Colorado in the Fall of 2015 to attend the Colorado
-          School of Mines. Though, I was always interested learning more about 
-          computing, I was not sold on pursuing a programming career until the
-          second semester of my freshman year while taking a C++ programming
-          course. However, I found myself drawn to the mobile
-          development space and began to learn about developing iOS apps.`;
+  const education = `In the fall of 2015, I moved to Golden, Colorado, to attend the
+  Colorado School of Mines. While I had always been interested in computing, I wasn’t set
+  on pursuing a programming career until my second semester of freshman year, when I took 
+  a C++ programming course. That class sparked my desire to major in Computer Science. As
+  I explored various software-related career paths, I quickly found myself drawn to mobile
+  app development, particularly for iOS.`;
 
-  const experience = `My career officially began in May of 2018 when I began an intership as
-          an iOS developer at VML Apps (formerly Wunderman Thompson Apps) in
-          Denver, CO. I continued to work for VML Apps while I worked to finish
-          up my degree in Compter Science and began full-time work in July of
-          2019. I was all set to graduate in May of 2020 and wrap up my final
-          classes over the Summer of 2020, but COVID-19 changed things. I worked
-          to hard in school to not get the privelege of actually walking accross
-          that stage. So, I decided to wait until things calmed down. I
-          continued to work full-time for VML and ended up getting my diploma in
-          person in May of 2023. I worked for VML Apps until August of 2024.`;
+  const experience = `My career officially began in May 2018, when I started an iOS 
+  development internship at VML Apps (formerly Wunderman Thompson Apps) in Denver, CO. I
+  continued working there while finishing my Computer Science degree and transitioned to
+  full-time employment in July 2019. I was set to graduate in May 2020, but when COVID-19 
+  disrupted everything, I decided to wait—having worked so hard, I wanted the privilege of 
+  walking across the stage. I continued working full-time at VML Apps and, in May 2023, 
+  finally received my diploma in person. I remained with VML Apps until August 2024.`;
 
-  const outro = `I currently live in Summit County, Colorado. I am always looking for
-          new technologies to explore and new adventures to embark on. At this
-          time, I am looking for a new role in the software development
-          industry. I am open to relocation and remote work.`;
+  const outro = `I currently live in Dillon, Colorado, and outside of programming, I 
+  enjoy traveling, skiing, disc golf, regular golf, cooking, and exploring nature. 
+  I'm always seeking new technologies to learn and new adventures to embark on.
+  At this time, I'm actively looking for a new role and am open to both relocation and remote 
+  opportunities.`;
 
   return (
     <section id="about">
