@@ -30,14 +30,6 @@ const Home: React.FC = () => {
         />
         <p>Hello and welcome to my website!</p>
         <p>
-          My name is Joseph &quot;Mac&quot; O&apos;Brien and I am an App
-          Developer and Software Engineer.
-        </p>
-        {/* <p>
-          I hope you enjoy my website and learn a little bit about me.
-          <br />
-        </p> */}
-        <p>
           If you have any questions or just want to chat, feel free to reach out
           using the contact methods at the bottom of the page!
         </p>
