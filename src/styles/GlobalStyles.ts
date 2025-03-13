@@ -99,7 +99,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   /* Common page styles */
-  #home, #portfolio, #resume, #contact, #photos, #not-found {
+  #home, #portfolio, #resume, #contact, #photos, #about, #not-found {
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -145,7 +145,7 @@ const GlobalStyles = createGlobalStyle`
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
 
-  /* Home styles */
+  /* Home & About styles */
   .home-image {
     height: auto;
     max-width: 300px;
@@ -154,7 +154,7 @@ const GlobalStyles = createGlobalStyle`
     display: block;
   }
 
-  #home p {
+  #home p, #about p {
     font-size: 18px;
     line-height: 1.6;
     color: whitesmoke;
@@ -421,7 +421,7 @@ const GlobalStyles = createGlobalStyle`
       margin: 0 auto 20px;
     }
 
-    #home p {
+    #home p, #about p {
       font-size: 16px;
       padding: 12px;
     }
