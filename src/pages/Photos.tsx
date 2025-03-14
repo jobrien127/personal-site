@@ -72,8 +72,8 @@ const photos: Photo[] = [
   },
   { src: '/assets/photos/dub2.png', alt: 'Old town Dubrovnik' },
   {
-    src: '/assets/photos/bench.png',
-    alt: 'On the bench with grandparents after graduating',
+    src: '/assets/photos/grad-bench.png',
+    alt: 'On a bench with grandparents and mother after graduating from Mines',
   },
   {
     src: '/assets/photos/wedding.png',
