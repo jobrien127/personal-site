@@ -26,23 +26,23 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    title: '30XX Arena Survival',
-    description: 'A 2D game created with GameMaker Studio.',
-    link: 'https://github.com/jobrien127/30XX_Arena_Survival',
-  },
-  {
-    id: 4,
     title: 'Python Playground',
     description:
       'A python playground for experiementing with machine learning and AI implementations.',
     link: 'https://github.com/jobrien127/python-playground',
   },
   {
-    id: 5,
+    id: 4,
     title: 'Tempo (Work in Progress)',
     description:
       'A Templated repo that is meant to help kickstart containerized full-stack development. Makes use of Docker, React, React-Native, Django, Go, postgreSQL, MongoDB, Redis, and RabbitMQ.',
     link: 'https://github.com/jobrien127/tempo',
+  },
+  {
+    id: 5,
+    title: '30XX Arena Survival',
+    description: 'A 2D game created with GameMaker Studio.',
+    link: 'https://github.com/jobrien127/30XX_Arena_Survival',
   },
   {
     id: 6,
