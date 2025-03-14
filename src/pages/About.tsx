@@ -40,9 +40,6 @@ const About: React.FC = () => {
       <div className="about-text">
         <h2>About Me</h2>
         <p>
-          Greetings!
-          <br />
-          <br />
           {background}
           <br />
           <br />
