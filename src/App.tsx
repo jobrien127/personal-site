@@ -12,7 +12,7 @@ const About = React.lazy(() => import('./pages/About'));
 const Resume = React.lazy(() => import('./pages/Resume'));
 const Portfolio = React.lazy(() => import('./pages/Portfolio'));
 const Photos = React.lazy(() => import('./pages/Photos'));
-const Contact = React.lazy(() => import('./pages/Contact'));
+// const Contact = React.lazy(() => import('./pages/Contact'));
 const NotFound = React.lazy(() => import('./pages/NotFound'));
 
 const App: React.FC = () => {
@@ -29,7 +29,7 @@ const App: React.FC = () => {
                 <Route path="/resume" element={<Resume />} />
                 <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="/photos" element={<Photos />} />
-                <Route path="/contact" element={<Contact />} />
+                {/* <Route path="/contact" element={<Contact />} /> */}
                 {/* This is the catch-all route that will display for any undefined paths */}
                 <Route path="*" element={<NotFound />} />
               </Routes>

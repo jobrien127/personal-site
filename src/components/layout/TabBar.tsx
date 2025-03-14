@@ -49,12 +49,12 @@ const TabBar: React.FC = () => {
           >
             Photos
           </button>
-          <button
+          {/* <button
             className={`tab-link ${location.pathname === '/contact' ? 'active' : ''}`}
             onClick={() => navigate('/contact')}
           >
             Contact
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
