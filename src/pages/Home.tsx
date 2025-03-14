@@ -31,7 +31,7 @@ const Home: React.FC = () => {
         <p>Hello and welcome to my website!</p>
         <p>
           If you have any questions or just want to chat, feel free to reach out
-          using the contact methods provided!
+          using any of the contact methods provided!
         </p>
         <p>
           “You can&apos;t stop the waves, but you can learn to surf.” - Alan

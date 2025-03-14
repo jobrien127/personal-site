@@ -407,7 +407,7 @@ const GlobalStyles = createGlobalStyle`
 
     .tab-link {
       padding: 6px 12px;
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
 
     h2 {
@@ -473,7 +473,7 @@ const GlobalStyles = createGlobalStyle`
 
     .tab-link {
       padding: 5px 10px;
-      font-size: 0.85rem;
+      font-size: 1rem;
     }
 
     .image-container {
