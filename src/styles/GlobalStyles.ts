@@ -467,12 +467,12 @@ const GlobalStyles = createGlobalStyle`
 
   @media (max-width: 480px) {
     .tab-links {
-      gap: 4px;
-      padding: 0 4px 5px;
+      gap: .5rem;
+      padding: 0 0.2rem 0.5rem;
     }
 
     .tab-link {
-      padding: 5px 10px;
+      padding: 0.3rem 0.6rem;
       font-size: 1rem;
     }
 
