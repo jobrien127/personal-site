@@ -25,7 +25,7 @@ const GlobalStyles = createGlobalStyle`
     color: whitesmoke;
     border: 1px solid #ddd;
     border-radius: 5px;
-    background-color: darkslategray;
+    background-color: darkslateblue;
     text-align: center;
     font-size: 2rem;
     margin: 0 auto 20px;

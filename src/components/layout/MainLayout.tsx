@@ -12,7 +12,14 @@ const LayoutWrapper = styled.div<WrapperProps>`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url('/assets/bg_photos/bg5.png');
+  background: linear-gradient(
+    135deg,
+    #1e2d40 0%,
+    #273844 25%,
+    #2f4f4f 50%,
+    #273844 75%,
+    #1a2836 100%
+  );
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,7 +34,11 @@ const LayoutWrapper = styled.div<WrapperProps>`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
+    background: radial-gradient(
+      circle at 70% 20%,
+      rgba(45, 128, 128, 0.08) 0%,
+      rgba(0, 0, 0, 0.2) 70%
+    );
     z-index: 0;
     pointer-events: none;
   }
@@ -47,9 +58,8 @@ const MainLayout: React.FC<LayoutProps> = ({ children }) => {
   const [isBackgroundLoaded, setIsBackgroundLoaded] = useState(false);
 
   useEffect(() => {
-    const img = new Image();
-    img.src = '/assets/bg_photos/bg5.png';
-    img.onload = () => setIsBackgroundLoaded(true);
+    // Set background as loaded immediately since we're not loading an image anymore
+    setIsBackgroundLoaded(true);
   }, []);
 
   return (
