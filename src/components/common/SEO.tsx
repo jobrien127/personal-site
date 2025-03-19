@@ -37,6 +37,10 @@ const SEO: React.FC<SEOProps> = ({
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
 
+      {/* Accessibility meta tags */}
+      <meta name="theme-color" content="#172535" />
+      <meta name="color-scheme" content="dark light" />
+
       {/* Additional meta tags */}
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="robots" content="index, follow" />

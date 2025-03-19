@@ -14,11 +14,11 @@ const LayoutWrapper = styled.div<WrapperProps>`
   min-height: 100vh;
   background: linear-gradient(
     135deg,
-    #1e2d40 0%,
-    #273844 25%,
-    #2f4f4f 50%,
-    #273844 75%,
-    #1a2836 100%
+    #172535 0%,
+    #1c2c38 25%,
+    #234545 50%,
+    #1c2c38 75%,
+    #14212c 100%
   );
   background-size: cover;
   background-position: center;
@@ -36,8 +36,8 @@ const LayoutWrapper = styled.div<WrapperProps>`
     height: 100%;
     background: radial-gradient(
       circle at 70% 20%,
-      rgba(45, 128, 128, 0.08) 0%,
-      rgba(0, 0, 0, 0.2) 70%
+      rgba(67, 191, 191, 0.1) 0%,
+      rgba(0, 0, 0, 0.3) 70%
     );
     z-index: 0;
     pointer-events: none;
@@ -58,7 +58,6 @@ const MainLayout: React.FC<LayoutProps> = ({ children }) => {
   const [isBackgroundLoaded, setIsBackgroundLoaded] = useState(false);
 
   useEffect(() => {
-    // Set background as loaded immediately since we're not loading an image anymore
     setIsBackgroundLoaded(true);
   }, []);
 

@@ -6,7 +6,7 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: lightgray;
+    background-color: #e0e0e0;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
       'Helvetica Neue', Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -22,16 +22,16 @@ const GlobalStyles = createGlobalStyle`
 
   /* Common styles */
   h2 {
-    color: whitesmoke;
+    color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 5px;
-    background-color: darkslateblue;
+    background-color: #483d8b;
     text-align: center;
     font-size: 2rem;
     margin: 0 auto 20px;
     padding: 15px;
     max-width: 800px;
-    opacity: 0.9;
+    opacity: 1;
   }
 
   /* TabBar styles */
@@ -43,7 +43,7 @@ const GlobalStyles = createGlobalStyle`
   .tab-bar {
     position: fixed;
     width: 100%;
-    background-color: #333;
+    background-color: #222;
     display: flex;
     z-index: 1000;
     padding: 10px 0 5px;
@@ -57,7 +57,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .tab-header {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     padding-bottom: 10px;
     font-size: 1.5rem;
@@ -75,10 +75,10 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .tab-link {
-    background: #2f4f4f;
-    color: whitesmoke;
+    background: #2a5050;
+    color: #ffffff;
     text-decoration: none;
-    border-color: darkgrey;
+    border-color: #a9a9a9;
     border-radius: 3px;
     border-style: solid;
     cursor: pointer;
@@ -89,13 +89,13 @@ const GlobalStyles = createGlobalStyle`
 
   .tab-link:hover {
     text-decoration: underline;
-    background-color: #273838;
-    color: lightgray;
+    background-color: #1e3434;
+    color: #ffffff;
   }
 
   .tab-link.active {
-    background-color: darkslateblue;
-    color: #fff;
+    background-color: #483d8b;
+    color: #ffffff;
   }
 
   /* Common page styles */
@@ -114,10 +114,10 @@ const GlobalStyles = createGlobalStyle`
   .not-found-content {
     font-size: 18px;
     line-height: 1.6;
-    color: whitesmoke;
-    background-color: #273838;
+    color: #ffffff;
+    background-color: #1c2727;
     margin-bottom: 3%;
-    opacity: 0.9;
+    opacity: 1;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 15px;
@@ -128,8 +128,8 @@ const GlobalStyles = createGlobalStyle`
 
   .home-link {
     display: inline-block;
-    background-color: darkslategray;
-    color: whitesmoke;
+    background-color: #2a5050;
+    color: #ffffff;
     padding: 12px 24px;
     margin-top: 15px;
     border-radius: 4px;
@@ -139,8 +139,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .home-link:hover {
-    background-color: #2f4f4f;
-    color: white;
+    background-color: #3a6060;
+    color: #ffffff;
     transform: translateY(-1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
@@ -149,7 +149,7 @@ const GlobalStyles = createGlobalStyle`
   .home-image {
     height: auto;
     max-width: 300px;
-    border: 3px solid #2d8080;
+    border: 3px solid #3ea3a3;
     margin: 20px auto;
     display: block;
   }
@@ -157,10 +157,10 @@ const GlobalStyles = createGlobalStyle`
   #home p, #about p {
     font-size: 18px;
     line-height: 1.6;
-    color: whitesmoke;
-    background-color: #273838;
+    color: #ffffff;
+    background-color: #1c2727;
     margin-bottom: 3%;
-    opacity: 0.9;
+    opacity: 1;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 15px;
@@ -178,13 +178,13 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .project {
-    background-color: #273838;
-    color: whitesmoke;
+    background-color: #1c2727;
+    color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    opacity: 0.9;
+    opacity: 1;
   }
 
   .project-title {
@@ -198,7 +198,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .project-link {
-    color: #ad8dff;
+    color: #c4b3ff;
     text-decoration: none;
     font-weight: bold;
     display: block;
@@ -211,7 +211,7 @@ const GlobalStyles = createGlobalStyle`
 
   .project-link:hover {
     text-decoration: underline;
-    color: #ffd902;
+    color: #ffe44f;
   }
 
   /* Resume styles */
@@ -224,8 +224,8 @@ const GlobalStyles = createGlobalStyle`
 
   .download-link {
     display: inline-block;
-    background-color: darkslategray;
-    color: whitesmoke;
+    background-color: #2a5050;
+    color: #ffffff;
     padding: 12px 24px;
     border-radius: 4px;
     text-decoration: none;
@@ -234,8 +234,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .download-link:hover {
-    background-color: #2f4f4f;
-    color: white;
+    background-color: #3a6060;
+    color: #ffffff;
     transform: translateY(-1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
@@ -252,10 +252,10 @@ const GlobalStyles = createGlobalStyle`
   .contact-card {
     font-size: 18px;
     line-height: 1.6;
-    color: whitesmoke;
-    background-color: #273838;
+    color: #ffffff;
+    background-color: #1c2727;
     margin-bottom: 3%;
-    opacity: 0.9;
+    opacity: 1;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 15px;
@@ -269,29 +269,29 @@ const GlobalStyles = createGlobalStyle`
 
   .contact-card h3 {
     margin: 0 0 15px 0;
-    color: whitesmoke;
+    color: #ffffff;
     font-size: 1.3em;
   }
 
   .contact-card a {
-    color: #ad8dff;
+    color: #c4b3ff;
     text-decoration: none;
     font-size: 1.1em;
   }
 
   .contact-card a:hover {
     text-decoration: underline;
-    color: #ffd902;
+    color: #ffe44f;
   }
 
   .contact-card span {
     font-size: 1.1em;
-    color: #fffde9;
+    color: #ffffff;
   }
 
   /* Footer styles */
   .footer {
-    background-color: #333;
+    background-color: #222;
     padding: 20px 20px 20px;
     width: 100%;
     box-sizing: border-box;
@@ -314,21 +314,21 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .footer-section h4 {
-    color: #fff;
+    color: #ffffff;
     margin: 0 0 0px;
     font-size: 1.1rem;
   }
 
   .footer-section a,
   .footer-section {
-    color: #b79cfd;
+    color: #c4b3ff;
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.2s ease;
   }
 
   .footer-section a:hover {
-    color: #fff;
+    color: #ffffff;
     text-decoration: underline;
   }
 
@@ -346,7 +346,7 @@ const GlobalStyles = createGlobalStyle`
   .footer-bottom p {
     margin: 0;
     font-size: 0.9rem;
-    color: #999;
+    color: #bbbbbb;
   }
 
   /* Photos styles */
@@ -369,9 +369,9 @@ const GlobalStyles = createGlobalStyle`
     display: block;
     margin-bottom: 25px;
     border-radius: 6px;
-    border: 2px solid #2d8080;
+    border: 2px solid #3ea3a3;
     cursor: pointer;
-    background-color: #273838;
+    background-color: #1c2727;
     padding: 12px;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
   }
