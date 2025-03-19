@@ -29,10 +29,7 @@ const photos: Photo[] = [
     src: '/assets/photos/arizona.png',
     alt: 'My Dad and I mountain biking in Arizona',
   },
-  {
-    src: '/assets/photos/fsu.png',
-    alt: 'Fresno State Bowl Game in Vegas',
-  },
+
   {
     src: '/assets/photos/jensen.png',
     alt: 'Lube Room Bar with my friend',
@@ -65,6 +62,10 @@ const photos: Photo[] = [
   {
     src: '/assets/photos/mom3.png',
     alt: 'Another Photobooth picture with my Mom',
+  },
+  {
+    src: '/assets/photos/fsu.png',
+    alt: 'Fresno State Bowl Game in Vegas',
   },
   {
     src: '/assets/photos/gabbytux.png',
