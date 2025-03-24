@@ -46,31 +46,25 @@ const projects: Project[] = [
   },
   {
     id: 6,
+    title: 'lemmonlodge.com',
+    description:
+      'Website I built for an idle domain, which sends automated emails to domain owner if site visitor wants to contact them.',
+    link: 'https://github.com/jobrien127/lemmon-lodge',
+    sitelink: 'https://www.lemmonlodge.com',
+  },
+  {
+    id: 7,
     title: 'Zodiac Sign Calculator',
     description:
       'Ruby program that calculates your zodiac sign based on your birthdate.',
     link: 'https://github.com/jobrien127/zodiac-sign-calculator',
   },
   {
-    id: 7,
+    id: 8,
     title: 'Markov Chain Text Generator',
     description:
       'Ruby program that generates text based on a given input text file.',
     link: 'https://github.com/jobrien127/markov-text-generator',
-  },
-  {
-    id: 8,
-    title: 'Home Again Website (Work in Progress)',
-    description:
-      "Codebase for a website I'm building for my Mother's small business.",
-    link: 'https://github.com/jobrien127/home-again',
-  },
-  {
-    id: 9,
-    title: 'lemmonlodge.com',
-    description: "Codebase for a website I built for my Uncle's idle domain.",
-    link: 'https://github.com/jobrien127/lemmon-lodge',
-    sitelink: 'https://www.lemmonlodge.com',
   },
 ];
 
