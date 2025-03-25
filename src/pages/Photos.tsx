@@ -12,6 +12,10 @@ const photos: Photo[] = [
     alt: 'Golfing at Pebble Beach with Dad and brother',
   },
   {
+    src: '/assets/photos/nick_grad2.jpg',
+    alt: 'My brother and I at his graduation get together',
+  },
+  {
     src: '/assets/photos/abaydisc.png',
     alt: 'Playing disc golf at Arapahoe Basin',
   },
@@ -28,11 +32,6 @@ const photos: Photo[] = [
   {
     src: '/assets/photos/arizona.png',
     alt: 'My Dad and I mountain biking in Arizona',
-  },
-
-  {
-    src: '/assets/photos/jensen.png',
-    alt: 'Lube Room Bar with my friend',
   },
   { src: '/assets/photos/mom.png', alt: 'Photo Booth with my Mom' },
   { src: '/assets/photos/amsterdam.png', alt: 'Amsterdam boat ride' },
@@ -69,6 +68,14 @@ const photos: Photo[] = [
   },
   { src: '/assets/photos/dub2.png', alt: 'Old town Dubrovnik' },
   {
+    src: '/assets/photos/jensen.png',
+    alt: 'Lube Room Bar with my friend',
+  },
+  {
+    src: '/assets/photos/nick_grad.JPG',
+    alt: "Siblings and I at my brother's graduation",
+  },
+  {
     src: '/assets/photos/grad-bench.png',
     alt: 'On a bench with grandparents and mother after graduating from Mines',
   },
@@ -79,6 +86,10 @@ const photos: Photo[] = [
   {
     src: '/assets/photos/morningbells.png',
     alt: 'Morning at the Maroon Bells landscape',
+  },
+  {
+    src: '/assets/photos/gooma2.jpg',
+    alt: 'My grandma and I',
   },
   {
     src: '/assets/photos/newyork.png',
