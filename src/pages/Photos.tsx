@@ -60,10 +60,6 @@ const photos: Photo[] = [
     alt: 'Daylight on the Maroon Bells',
   },
   {
-    src: '/assets/photos/mom3.png',
-    alt: 'Another Photobooth picture with my Mom',
-  },
-  {
     src: '/assets/photos/fsu.png',
     alt: 'Fresno State Bowl Game in Vegas',
   },

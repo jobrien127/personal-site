@@ -9,8 +9,7 @@ const TabBar: React.FC = () => {
     <div className="tab-bar">
       <div className="tab-container">
         <header className="tab-header">
-          Joseph &quot;Mac&quot; O&apos;Brien - Software Engineer & App
-          Developer
+          Joseph (Mac) OBrien - Software Engineer & App Developer
         </header>
         <div className="tab-links">
           <button
