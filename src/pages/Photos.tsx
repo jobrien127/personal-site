@@ -92,6 +92,10 @@ const photos: Photo[] = [
     alt: 'My grandma and I',
   },
   {
+    src: '/assets/photos/gabby.png',
+    alt: 'My girlfriend and I at my cousins wedding',
+  },
+  {
     src: '/assets/photos/newyork.png',
     alt: 'New York City with Gabby',
   },

@@ -23,16 +23,12 @@ const Home: React.FC = () => {
       />
       <section id="home">
         <h2>Home</h2>
-        <img
-          src="/assets/photos/headshot.png"
-          alt="Joseph O'Brien"
-          className="home-image"
-        />
-        <p>Hello and welcome to my website!</p>
+        <p>Welcome!</p>
         <p>
-          If you have any questions or just want to chat, feel free to reach out
-          using any of the contact methods provided!
+          The purpose of this site is to highlight my personal projects,
+          professional experiences, and offer a glimpse into who I am.
         </p>
+        <p>Feel free to connect with me using the provided contact methods!</p>
         <p>
           “You can&apos;t stop the waves, but you can learn to surf.” - Alan
           Watts
