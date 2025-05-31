@@ -7,7 +7,6 @@ const Footer: React.FC = () => {
         <div className="footer-section">
           <h4>Contact</h4>
           <a href="mailto:dev@jm-ob.com">dev@jm-ob.com</a>
-          <a href="tel:+12095345372">+1 (209) 534-5372</a>
         </div>
         <div className="footer-section">
           <h4>Connect</h4>
