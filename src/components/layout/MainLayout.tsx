@@ -14,11 +14,12 @@ const LayoutWrapper = styled.div<WrapperProps>`
   min-height: 100vh;
   background: linear-gradient(
     135deg,
-    #172535 0%,
-    #1c2c38 25%,
-    #234545 50%,
-    #1c2c38 75%,
-    #14212c 100%
+    #5a7d9a 0%,
+    #1e2e3c 20%,
+    #2c7373 40%,
+    #162229 60%,
+    #2f4454 80%,
+    #1b1f23 100%
   );
   background-size: cover;
   background-position: center;
