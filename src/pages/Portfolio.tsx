@@ -82,7 +82,7 @@ const Portfolio: React.FC = () => {
     <>
       <SEO
         title="Portfolio"
-        description="Explore my software development projects, including web applications, games, and tools built with various technologies."
+        description=""
         keywords={[
           'portfolio',
           'projects',
