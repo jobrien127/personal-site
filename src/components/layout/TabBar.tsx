@@ -18,12 +18,12 @@ const TabBar: React.FC = () => {
           >
             Home
           </button>
-          <button
+          {/* <button
             className={`tab-link ${location.pathname === '/about' ? 'active' : ''}`}
             onClick={() => navigate('/about')}
           >
             About
-          </button>
+          </button> */}
           <button
             className={`tab-link ${location.pathname === '/resume' ? 'active' : ''}`}
             onClick={() => navigate('/resume')}
@@ -42,12 +42,12 @@ const TabBar: React.FC = () => {
           >
             Blog
           </button> */}
-          <button
+          {/* <button
             className={`tab-link ${location.pathname === '/photos' ? 'active' : ''}`}
             onClick={() => navigate('/photos')}
           >
             Photos
-          </button>
+          </button> */}
           {/* <button
             className={`tab-link ${location.pathname === '/contact' ? 'active' : ''}`}
             onClick={() => navigate('/contact')}
