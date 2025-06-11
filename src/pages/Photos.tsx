@@ -23,7 +23,7 @@ const photos: Photo[] = [
     src: '/assets/photos/sisters.png',
     alt: "My sisters and I at our cousin's wedding",
   },
-  { src: '/assets/photos/gooma.png', alt: 'My Grandma and I' },
+  // { src: '/assets/photos/gooma.png', alt: 'My Grandma and I' },
   {
     src: '/assets/photos/graduation.png',
     alt: 'My Graduation ceremony',
@@ -34,7 +34,7 @@ const photos: Photo[] = [
     alt: 'My Dad and I mountain biking in Arizona',
   },
   { src: '/assets/photos/mom.png', alt: 'Photo Booth with my Mom' },
-  { src: '/assets/photos/amsterdam.png', alt: 'Amsterdam boat ride' },
+  // { src: '/assets/photos/amsterdam.png', alt: 'Amsterdam boat ride' },
   {
     src: '/assets/photos/tropez.png',
     alt: 'My brother and I in Saint-Tropez, France',
@@ -54,14 +54,14 @@ const photos: Photo[] = [
     src: '/assets/photos/dub.png',
     alt: 'Another Old town Dubrovnik scene',
   },
-  {
-    src: '/assets/photos/lightbells.png',
-    alt: 'Daylight on the Maroon Bells',
-  },
-  {
-    src: '/assets/photos/fsu.png',
-    alt: 'Fresno State Bowl Game in Vegas',
-  },
+  // {
+  //   src: '/assets/photos/lightbells.png',
+  //   alt: 'Daylight on the Maroon Bells',
+  // },
+  // {
+  //   src: '/assets/photos/fsu.png',
+  //   alt: 'Fresno State Bowl Game in Vegas',
+  // },
   {
     src: '/assets/photos/gabbytux.png',
     alt: 'Gabby with me in tuxedo',

@@ -5,6 +5,10 @@ import { useScrollToTop } from '../utils/hooks';
 const Home: React.FC = () => {
   useScrollToTop();
 
+  const greeting = 'Hello, world!';
+  const intro =
+    'Experienced mobile developer looking for new opportunities to explore. I enjoy learning new technologies and am eager to further my growth as full-stack engineer.';
+
   return (
     <>
       <SEO
@@ -23,6 +27,8 @@ const Home: React.FC = () => {
       />
       <section id="home">
         <h2>Home</h2>
+        <p>{greeting}</p>
+        <p>{intro}</p>
         <p>
           “You can&apos;t stop the waves, but you can learn to surf.” - Alan
           Watts
