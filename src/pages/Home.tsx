@@ -7,7 +7,7 @@ const Home: React.FC = () => {
 
   const greeting = 'Hello, world!';
   const intro =
-    'Experienced mobile developer looking for new opportunities to explore. I enjoy learning new technologies and am eager to further my growth as full-stack engineer.';
+    'Experienced mobile developer looking for new opportunities to explore. I enjoy learning new technologies and am eager to further my growth as a full-stack engineer.';
 
   return (
     <>
