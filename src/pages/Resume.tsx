@@ -25,14 +25,14 @@ const Resume: React.FC = () => {
         <h2>Resume</h2>
 
         <iframe
-          src="/assets/CV-links.pdf"
+          src="/assets/Joseph_OBrien_CV_.pdf"
           width="100%"
           height="1000px"
           title="Joseph O'Brien's Resume"
           className="resume-frame"
         />
         <a
-          href="/assets/CV-links.pdf"
+          href="/assets/Joseph_OBrien_CV_.pdf"
           download="Joseph_OBrien_Resume.pdf"
           className="download-link"
         >
