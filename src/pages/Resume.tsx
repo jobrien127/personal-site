@@ -9,7 +9,7 @@ const Resume: React.FC = () => {
     <>
       <SEO
         title="Resume"
-        description=""
+        description="Download Joseph O'Brien's professional resume. Experienced software engineer with expertise in full-stack development, JavaScript, TypeScript, React, Node.js, and Python."
         keywords={[
           'resume',
           'CV',
