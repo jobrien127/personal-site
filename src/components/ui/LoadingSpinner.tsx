@@ -18,8 +18,8 @@ const SpinnerWrapper = styled(motion.div)`
 const Spinner = styled.div`
   width: 50px;
   height: 50px;
-  border: 5px solid #f8f8f8;
-  border-top: 5px solid #4361ee;
+  border: 5px solid rgba(255, 255, 255, 0.1);
+  border-top: 5px solid #3ea3a3;
   border-radius: 50%;
   animation: ${spin} 1s linear infinite;
 `;
