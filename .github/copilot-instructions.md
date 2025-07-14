@@ -16,7 +16,8 @@ React TypeScript portfolio website with comprehensive SEO optimization, styled-c
 ### Styling System
 
 - **Global Styles**: Comprehensive CSS-in-JS system in `src/styles/GlobalStyles.ts` defines all component styles via CSS classes
-- **Theme Colors**: Dark theme with teal accent (`#3ea3a3`), dark blue backgrounds (`#1c2727`, `#483d8b`)
+- **Theme Colors**: Dark theme with teal/cyan accents (`#14b8a6`, `#06b6d4`), slate backgrounds (`#0f172a`, `#1e293b`, `#334155`)
+- **Gradients**: Extensive use of linear gradients for visual depth (buttons, cards, backgrounds)
 - **Responsive Design**: Mobile-first approach with breakpoints at 768px and 480px
 - **Layout Variables**: Uses CSS custom properties (`--tab-bar-height`, `--content-spacing`)
 
@@ -81,8 +82,9 @@ The `SEO` component provides comprehensive meta tags, structured data, and perfo
 
 ### Styled Components Integration
 
-- **Global CSS**: Never use styled-components for layout - use GlobalStyles.ts classes
-- **Component Styling**: Only use styled-components for component-specific styling with props
+- **Global CSS**: CRITICAL - Never use styled-components for layout/page styles - use GlobalStyles.ts classes exclusively
+- **Component Styling**: Only use styled-components for component-specific styling with props (see `MainLayout.tsx`)
+- **Background System**: `MainLayout` handles complex gradient backgrounds with overlay effects
 - **Theme Access**: Access global CSS variables via `var(--variable-name)`
 
 ### Router and Animation
@@ -95,6 +97,14 @@ The `SEO` component provides comprehensive meta tags, structured data, and perfo
   </Routes>
 </AnimatePresence>
 ```
+
+**Note**: Several pages are currently commented out in `App.tsx` (About, Photos, Contact) but their components still exist - uncomment routes to re-enable.
+
+## Current Page Status
+
+- **Active Pages**: Home (`/`), Resume (`/resume`), Portfolio (`/portfolio`), NotFound (`/*`)
+- **Disabled Pages**: About, Photos, Contact (commented in router but components exist)
+- **Page Loading**: All pages use `React.lazy()` with `LoadingSpinner` fallback
 
 ## Project-Specific Conventions
 
