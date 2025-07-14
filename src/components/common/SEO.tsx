@@ -154,7 +154,7 @@ const SEO: React.FC<SEOProps> = ({
       <meta name="mobile-web-app-capable" content="yes" />
 
       {/* Accessibility and Theme */}
-      <meta name="theme-color" content="#172535" />
+      <meta name="theme-color" content="#0f172a" />
       <meta name="color-scheme" content="dark light" />
 
       {/* Security Headers */}

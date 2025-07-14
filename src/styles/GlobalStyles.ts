@@ -28,7 +28,7 @@ const GlobalStyles = createGlobalStyle`
     color: #ffffff;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 16px;
-    background: linear-gradient(135deg, #483d8b 0%, #5a4fcf 100%);
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #06b6d4 100%);
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
@@ -37,13 +37,13 @@ const GlobalStyles = createGlobalStyle`
     padding: 24px 32px;
     max-width: 800px;
     opacity: 1;
-    box-shadow: 0 8px 32px rgba(72, 61, 139, 0.3);
+    box-shadow: 0 8px 32px rgba(30, 64, 175, 0.3);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   h2:hover {
     transform: translateY(-2px);
-    box-shadow: 0 12px 40px rgba(72, 61, 139, 0.4);
+    box-shadow: 0 12px 40px rgba(30, 64, 175, 0.4);
   }
 
   /* TabBar styles */
@@ -89,7 +89,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .tab-link {
-    background: linear-gradient(135deg, #2a5050 0%, #3a6060 100%);
+    background: linear-gradient(135deg, #0f766e 0%, #14b8a6 100%);
     color: #ffffff;
     text-decoration: none;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -116,10 +116,10 @@ const GlobalStyles = createGlobalStyle`
 
   .tab-link:hover {
     text-decoration: underline;
-    background: linear-gradient(135deg, #1e3434 0%, #2a4a4a 100%);
+    background: linear-gradient(135deg, #0d9488 0%, #06b6d4 100%);
     color: #ffffff;
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 12px rgba(15, 118, 110, 0.4);
   }
 
   .tab-link:hover::before {
@@ -127,9 +127,9 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .tab-link.active {
-    background: linear-gradient(135deg, #483d8b 0%, #5a4fcf 100%);
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
     color: #ffffff;
-    box-shadow: 0 4px 16px rgba(72, 61, 139, 0.4);
+    box-shadow: 0 4px 16px rgba(30, 64, 175, 0.4);
   }
 
   /* Common page styles */
@@ -149,7 +149,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: 18px;
     line-height: 1.6;
     color: #ffffff;
-    background: linear-gradient(135deg, #1c2727 0%, #2a3535 100%);
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
     margin-bottom: 24px;
     opacity: 1;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -164,7 +164,7 @@ const GlobalStyles = createGlobalStyle`
 
   .home-link {
     display: inline-block;
-    background: linear-gradient(135deg, #2a5050 0%, #3ea3a3 100%);
+    background: linear-gradient(135deg, #0f766e 0%, #14b8a6 100%);
     color: #ffffff;
     padding: 12px 24px;
     margin-top: 15px;
@@ -189,10 +189,10 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .home-link:hover {
-    background: linear-gradient(135deg, #3a6060 0%, #4eb3b3 100%);
+    background: linear-gradient(135deg, #0d9488 0%, #06b6d4 100%);
     color: #ffffff;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(62, 163, 163, 0.3);
+    box-shadow: 0 8px 20px rgba(20, 184, 166, 0.4);
   }
 
   .home-link:hover::after {
@@ -203,25 +203,25 @@ const GlobalStyles = createGlobalStyle`
   .home-image {
     height: auto;
     max-width: 300px;
-    border: 3px solid #3ea3a3;
+    border: 3px solid #14b8a6;
     border-radius: 12px;
     margin: 20px auto;
     display: block;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 24px rgba(20, 184, 166, 0.3);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .home-image:hover {
     transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
-    border-color: #5ac3c3;
+    box-shadow: 0 16px 40px rgba(20, 184, 166, 0.4);
+    border-color: #06b6d4;
   }
 
   #home p, #about p {
     font-size: 18px;
     line-height: 1.6;
     color: #ffffff;
-    background: linear-gradient(135deg, #1c2727 0%, #2a3535 100%);
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
     margin-bottom: 24px;
     opacity: 1;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -238,7 +238,7 @@ const GlobalStyles = createGlobalStyle`
   #home p:hover, #about p:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-    border-color: rgba(62, 163, 163, 0.3);
+    border-color: rgba(20, 184, 166, 0.3);
   }
 
   /* Portfolio styles */
@@ -250,7 +250,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .project {
-    background: linear-gradient(135deg, #1c2727 0%, #2a3535 100%);
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
     color: #ffffff;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 16px;
@@ -270,7 +270,7 @@ const GlobalStyles = createGlobalStyle`
     left: 0;
     right: 0;
     height: 2px;
-    background: linear-gradient(90deg, #3ea3a3, #5a4fcf, #3ea3a3);
+    background: linear-gradient(90deg, #14b8a6, #06b6d4, #3b82f6);
     opacity: 0;
     transition: opacity 0.3s ease;
   }
@@ -278,7 +278,7 @@ const GlobalStyles = createGlobalStyle`
   .project:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-    border-color: rgba(62, 163, 163, 0.3);
+    border-color: rgba(20, 184, 166, 0.3);
   }
 
   .project:hover::before {
@@ -296,7 +296,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .project-link {
-    color: #c4b3ff;
+    color: #a78bfa;
     text-decoration: none;
     font-weight: bold;
     display: block;
@@ -311,8 +311,8 @@ const GlobalStyles = createGlobalStyle`
 
   .project-link:hover {
     text-decoration: underline;
-    color: #ffffff;
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    color: #14b8a6;
+    text-shadow: 0 0 8px rgba(20, 184, 166, 0.5);
     transform: translateX(4px);
   }
 
@@ -326,7 +326,7 @@ const GlobalStyles = createGlobalStyle`
 
   .download-link {
     display: inline-block;
-    background: linear-gradient(135deg, #2a5050 0%, #3ea3a3 100%);
+    background: linear-gradient(135deg, #0f766e 0%, #14b8a6 100%);
     color: #ffffff;
     padding: 12px 24px;
     border-radius: 8px;
@@ -350,10 +350,10 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .download-link:hover {
-    background: linear-gradient(135deg, #3a6060 0%, #4eb3b3 100%);
+    background: linear-gradient(135deg, #0d9488 0%, #06b6d4 100%);
     color: #ffffff;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(62, 163, 163, 0.3);
+    box-shadow: 0 8px 20px rgba(20, 184, 166, 0.4);
   }
 
   .download-link:hover::after {
@@ -373,7 +373,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: 18px;
     line-height: 1.6;
     color: #ffffff;
-    background: linear-gradient(135deg, #1c2727 0%, #2a3535 100%);
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
     margin-bottom: 24px;
     opacity: 1;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -392,7 +392,7 @@ const GlobalStyles = createGlobalStyle`
     left: 0;
     right: 0;
     height: 2px;
-    background: linear-gradient(90deg, #3ea3a3, #5a4fcf, #3ea3a3);
+    background: linear-gradient(90deg, #14b8a6, #06b6d4, #3b82f6);
     opacity: 0;
     transition: opacity 0.3s ease;
   }
@@ -400,7 +400,7 @@ const GlobalStyles = createGlobalStyle`
   .contact-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-    border-color: rgba(62, 163, 163, 0.3);
+    border-color: rgba(20, 184, 166, 0.3);
   }
 
   .contact-card:hover::before {
@@ -414,7 +414,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .contact-card a {
-    color: #c4b3ff;
+    color: #a78bfa;
     text-decoration: none;
     font-size: 1.1em;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -422,8 +422,8 @@ const GlobalStyles = createGlobalStyle`
 
   .contact-card a:hover {
     text-decoration: underline;
-    color: #3ea3a3;
-    text-shadow: 0 0 8px rgba(62, 163, 163, 0.5);
+    color: #14b8a6;
+    text-shadow: 0 0 8px rgba(20, 184, 166, 0.5);
   }
 
   .contact-card span {
@@ -472,9 +472,9 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .footer-section a:hover {
-    color: #3ea3a3;
+    color: #14b8a6;
     text-decoration: underline;
-    text-shadow: 0 0 8px rgba(62, 163, 163, 0.5);
+    text-shadow: 0 0 8px rgba(20, 184, 166, 0.5);
   }
 
   .social-links {
@@ -514,9 +514,9 @@ const GlobalStyles = createGlobalStyle`
     display: block;
     margin-bottom: 25px;
     border-radius: 12px;
-    border: 2px solid rgba(62, 163, 163, 0.3);
+    border: 2px solid rgba(20, 184, 166, 0.3);
     cursor: pointer;
-    background-color: #1c2727;
+    background-color: #1e293b;
     padding: 12px;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     filter: brightness(0.9) contrast(1.1);
@@ -525,7 +525,7 @@ const GlobalStyles = createGlobalStyle`
   .gallery-image:hover {
     transform: translateY(-8px) scale(1.02);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-    border-color: #3ea3a3;
+    border-color: #14b8a6;
     filter: brightness(1) contrast(1.2);
   }
 

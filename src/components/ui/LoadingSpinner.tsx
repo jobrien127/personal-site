@@ -19,7 +19,7 @@ const Spinner = styled.div`
   width: 50px;
   height: 50px;
   border: 5px solid rgba(255, 255, 255, 0.1);
-  border-top: 5px solid #3ea3a3;
+  border-top: 5px solid #14b8a6;
   border-radius: 50%;
   animation: ${spin} 1s linear infinite;
 `;

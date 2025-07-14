@@ -14,12 +14,11 @@ const LayoutWrapper = styled.div<WrapperProps>`
   min-height: 100vh;
   background: linear-gradient(
     135deg,
-    #5a7d9a 0%,
-    #1e2e3c 20%,
-    #2c7373 40%,
-    #162229 60%,
-    #2f4454 80%,
-    #1b1f23 100%
+    #0f172a 0%,
+    #1e293b 25%,
+    #334155 50%,
+    #475569 75%,
+    #64748b 100%
   );
   background-size: cover;
   background-position: center;
@@ -37,8 +36,8 @@ const LayoutWrapper = styled.div<WrapperProps>`
     height: 100%;
     background: radial-gradient(
       circle at 70% 20%,
-      rgba(67, 191, 191, 0.1) 0%,
-      rgba(0, 0, 0, 0.3) 70%
+      rgba(16, 185, 129, 0.15) 0%,
+      rgba(0, 0, 0, 0.4) 70%
     );
     z-index: 0;
     pointer-events: none;
