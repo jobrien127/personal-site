@@ -1,142 +1,147 @@
-# Personal Portfolio Website - AI Coding Instructions
+# GitHub Copilot Instructions
 
-## Project Overview
+Personal portfolio website built with React 18, TypeScript, and styled-components. Single-page application with React Router, lazy-loaded pages, and comprehensive SEO optimization.
 
-React TypeScript portfolio website with comprehensive SEO optimization, styled-components theming, and Framer Motion animations. Built with Create React App and designed for static hosting.
+## Package Manager
 
-## Architecture Patterns
+**Always use Yarn (`yarn@1.22.22`)** - never npm. Package manager is pinned in `package.json`.
 
-### Page Structure
-
-- **Layout**: All pages use `MainLayout` wrapper with fixed `TabBar`, animated content area, and `Footer`
-- **SEO Integration**: Every page MUST include `<SEO>` component with specific title, description, and keywords
-- **Navigation**: Uses `useScrollToTop()` hook on all pages for smooth scroll-to-top behavior
-- **Lazy Loading**: All pages are lazy-loaded via `React.lazy()` with `Suspense` fallback
-
-### Styling System
-
-- **Global Styles**: Comprehensive CSS-in-JS system in `src/styles/GlobalStyles.ts` defines all component styles via CSS classes
-- **Theme Colors**: Dark theme with teal/cyan accents (`#14b8a6`, `#06b6d4`), slate backgrounds (`#0f172a`, `#1e293b`, `#334155`)
-- **Gradients**: Extensive use of linear gradients for visual depth (buttons, cards, backgrounds)
-- **Responsive Design**: Mobile-first approach with breakpoints at 768px and 480px
-- **Layout Variables**: Uses CSS custom properties (`--tab-bar-height`, `--content-spacing`)
-
-### Component Conventions
-
-```tsx
-// Standard page structure
-const PageName: React.FC = () => {
-  useScrollToTop(); // Always first hook call
-
-  return (
-    <>
-      <SEO
-        title="Page Title"
-        description="Specific page description"
-        keywords={['relevant', 'keywords']}
-      />
-      <section id="page-name">
-        <h2>Page Title</h2>
-        {/* Page content */}
-      </section>
-    </>
-  );
-};
+```bash
+yarn install        # Install dependencies
+yarn start          # Dev server (localhost:3000)
+yarn build          # Production build
+yarn test           # Run Jest tests
+yarn format         # Format with Prettier
 ```
 
-## Development Workflows
+## Architecture Overview
 
-### Key Commands
+### Styling Strategy: Global CSS-in-JS
 
-- `yarn start` - Development server (port 3000)
-- `yarn build` - Production build with asset optimization
-- `yarn format` - Prettier formatting (required before commits)
-- `yarn test` - Jest test runner
+**Critical pattern:** All CSS lives in `src/styles/GlobalStyles.ts` as a single styled-components `createGlobalStyle`. This is NOT component-scoped CSS.
 
-### File Organization
+- **Global styles:** Extensive class-based CSS (`.project`, `.contact-card`, `.home-image`, `.tab-link`, etc.) defined once in `GlobalStyles.ts`
+- **Component styles:** Only layout components (`MainLayout`, `TabBar`, `Footer`) use local styled-components for structural elements
+- **Page content:** Pages use global CSS classes exclusively - no inline styles or page-level styled-components
+- **When adding features:** Add new CSS classes to `GlobalStyles.ts`, never create component-scoped styles in pages
 
-- `src/pages/` - Route components with SEO and scroll behavior
-- `src/components/layout/` - Layout components (MainLayout, TabBar, Footer)
-- `src/components/common/` - Reusable components (SEO)
-- `src/components/ui/` - UI components (LoadingSpinner)
-- `src/styles/` - Global styling system
-- `src/types/` - TypeScript interfaces
-- `src/utils/` - Custom hooks and utilities
+### Design System
 
-### Asset Management
+Consistent gradient palette used throughout:
 
-- **Static Assets**: All in `public/assets/` with organized subdirectories
-- **Images**: Use relative paths `/assets/photos/filename.png` for consistency
-- **PDFs**: Direct iframe embedding with download links (`src/pages/Resume.tsx`)
+- **Teal/Cyan:** `#14b8a6`, `#06b6d4` (primary actions, accents)
+- **Blue:** `#1e40af`, `#3b82f6` (headings, active states)
+- **Slate:** `#1e293b`, `#334155` (content cards, backgrounds)
 
-## Critical Integration Points
+All interactive elements use:
 
-### SEO Component Usage
+- Gradient backgrounds with `linear-gradient(135deg, ...)`
+- `cubic-bezier(0.4, 0, 0.2, 1)` transitions
+- Hover effects: `translateY(-2px)` + enhanced `box-shadow`
+- Border: `1px solid rgba(255, 255, 255, 0.1)`
 
-The `SEO` component provides comprehensive meta tags, structured data, and performance optimizations:
+### Route & Code Splitting Pattern
 
-- **Required Props**: `title`, `description`
-- **Optional**: `keywords[]`, `ogImage`, `isArticle`, `publishedDate`
-- **Auto-generates**: Person schema, website schema, OpenGraph tags, Twitter cards
-- **Performance**: Includes resource hints for fonts and external CDNs
-
-### Styled Components Integration
-
-- **Global CSS**: CRITICAL - Never use styled-components for layout/page styles - use GlobalStyles.ts classes exclusively
-- **Component Styling**: Only use styled-components for component-specific styling with props (see `MainLayout.tsx`)
-- **Background System**: `MainLayout` handles complex gradient backgrounds with overlay effects
-- **Theme Access**: Access global CSS variables via `var(--variable-name)`
-
-### Router and Animation
+All pages are lazy-loaded via `React.lazy()` and wrapped in `<Suspense>` with `LoadingSpinner`:
 
 ```tsx
-// App.tsx pattern for adding new routes
-<AnimatePresence mode="wait">
-  <Routes>
-    <Route path="/new-page" element={<NewPage />} />
-  </Routes>
-</AnimatePresence>
+const PageName = React.lazy(() => import('./pages/PageName'));
+// In Router:
+<Route path="/path" element={<PageName />} />;
 ```
 
-**Note**: Several pages are currently commented out in `App.tsx` (About, Photos, Contact) but their components still exist - uncomment routes to re-enable.
+Currently active routes: Home (`/`), Resume (`/resume`), Portfolio (`/portfolio`), NotFound (`*`)
+Commented routes exist but are disabled: About, Photos, Contact, Blog
 
-## Current Page Status
+### Layout System
 
-- **Active Pages**: Home (`/`), Resume (`/resume`), Portfolio (`/portfolio`), NotFound (`/*`)
-- **Disabled Pages**: About, Photos, Contact (commented in router but components exist)
-- **Page Loading**: All pages use `React.lazy()` with `LoadingSpinner` fallback
+- `MainLayout` wraps all pages with fixed `TabBar` navigation, gradient background, and `Footer`
+- Content margin compensates for fixed TabBar height (CSS variable `--tab-bar-height`)
+- All pages are centered containers (`max-width: 1200px`) using IDs like `#home`, `#portfolio`, `#resume`
+- Background is fixed gradient with radial overlay for depth
 
-## Project-Specific Conventions
+### SEO Implementation
 
-### TypeScript Patterns
+Every page uses `<SEO>` component with React Helmet for:
 
-- **Strict Mode**: All files must pass strict TypeScript checks
-- **Interface Exports**: Define interfaces in `src/types/index.ts` for reusability
-- **React.FC**: Use for all functional components with explicit typing
+- Page-specific meta tags (title, description, keywords)
+- Open Graph & Twitter Card metadata
+- Structured data (JSON-LD): Person, WebSite, Article schemas
+- Performance hints (preconnect, dns-prefetch)
+- Mobile optimization and security headers
 
-### Component Patterns
+**Pattern:** Import and place `<SEO>` as first element in page component before main content.
 
-- **Data Arrays**: Define as const arrays outside component (see `Portfolio.tsx` projects array)
-- **Conditional Rendering**: Use `&&` for optional elements, ternary for either/or
-- **External Links**: Always include `target="_blank" rel="noopener noreferrer"`
+### Type Organization
 
-### Performance Considerations
+- Shared types: `src/types/index.ts` (currently `LayoutProps`, `MetaProps`)
+- TypeScript strict mode enabled in `tsconfig.json`
+- Custom type roots include `./src/types` for global declarations
+- Component props interfaces defined inline above component
 
-- **Lazy Loading**: All pages must be lazy-loaded for optimal bundle splitting
-- **Image Optimization**: Images should include proper alt tags and loading strategies
-- **PDF Handling**: Use iframe for embedded PDFs, avoid complex PDF.js configurations
+### Custom Hooks
 
-## Dependencies and Versions
+`src/utils/hooks.ts` contains utility hooks like `useScrollToTop()`:
 
-- **React 18**: Uses concurrent features and React.lazy
-- **Styled Components 6**: Latest API patterns
-- **Framer Motion 11**: Animation system for page transitions
-- **React Router 6**: Modern routing with data APIs
-- **React Helmet Async**: SEO meta tag management
+- Every page component calls `useScrollToTop()` in body to reset scroll on navigation
+- Uses `requestAnimationFrame` for smooth scrolling to top on route change
 
-## Common Debugging Patterns
+## Code Style Enforcement
 
-- **Build Errors**: Check ESLint configuration in `.eslintrc.json`
-- **Styling Issues**: Verify GlobalStyles.ts class names match component usage
-- **SEO Problems**: Validate structured data with Google's Rich Results Test
-- **Performance**: Use React DevTools Profiler for component render analysis
+Prettier + ESLint enforced via:
+
+```json
+{
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "printWidth": 80,
+  "tabWidth": 2
+}
+```
+
+- Run `yarn format` before commits
+- ESLint uses `react-app` + Prettier integration
+- Component structure: imports → interfaces → component → export
+
+## Responsive Breakpoints
+
+Mobile-first design with three breakpoints in `GlobalStyles.ts`:
+
+- `@media (max-width: 480px)` - Mobile phones
+- `@media (max-width: 768px)` - Tablets
+- `@media (min-width: 1024px)` - Large desktops
+
+TabBar collapses, font sizes reduce, margins adjust at each breakpoint.
+
+## Asset Conventions
+
+- Images: `public/assets/photos/` for content, `public/assets/bg_photos/` (unused)
+- Resume PDF: `public/assets/Joseph_OBrien_CV.pdf` for viewer/download
+- Favicon: `public/assets/favicon.ico`
+
+## Framer Motion Integration
+
+`AnimatePresence` wraps routes with `mode="wait"` for page transitions. Add motion props to page wrappers for custom animations (not currently implemented per page).
+
+## Adding New Pages Checklist
+
+1. Create page component in `src/pages/` with `useScrollToTop()` hook
+2. Add lazy import in `App.tsx`: `const NewPage = React.lazy(() => import('./pages/NewPage'));`
+3. Add route inside `<Routes>`: `<Route path="/newpage" element={<NewPage />} />`
+4. Add navigation button in `src/components/layout/TabBar.tsx` with active state
+5. Style page content using global CSS classes in `GlobalStyles.ts`
+6. Include `<SEO>` component at top of page with appropriate metadata
+
+## Testing Setup
+
+- Jest + React Testing Library configured
+- `src/setupTests.ts` imports `@testing-library/jest-dom`
+- Run with `yarn test` (currently minimal test coverage)
+
+## Known Patterns
+
+- **Fixed header spacing:** All `<section>` elements use `margin-top: calc(var(--tab-bar-height) + var(--content-spacing))` to avoid overlap with TabBar
+- **Navigation:** React Router's `useNavigate()` and `useLocation()` for programmatic navigation and active states
+- **HelmetProvider:** Wraps entire app in `App.tsx` for React Helmet Async
+- **Font:** Inter font family with system font fallbacks
