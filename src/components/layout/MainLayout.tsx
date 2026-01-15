@@ -5,7 +5,7 @@ import Footer from './Footer';
 import { LayoutProps } from '../../types';
 
 interface WrapperProps {
-  isLoaded: boolean;
+  $isLoaded: boolean;
 }
 
 const LayoutWrapper = styled.div<WrapperProps>`
@@ -24,7 +24,7 @@ const LayoutWrapper = styled.div<WrapperProps>`
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  opacity: ${(props) => (props.isLoaded ? 1 : 0)};
+  opacity: ${(props) => (props.$isLoaded ? 1 : 0)};
   transition: opacity 0.3s ease-in;
 
   &::before {
@@ -62,7 +62,7 @@ const MainLayout: React.FC<LayoutProps> = ({ children }) => {
   }, []);
 
   return (
-    <LayoutWrapper isLoaded={isBackgroundLoaded}>
+    <LayoutWrapper $isLoaded={isBackgroundLoaded}>
       <TabBar />
       <MainContent>{children}</MainContent>
       <Footer />
