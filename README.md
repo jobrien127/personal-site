@@ -11,7 +11,8 @@ A modern portfolio website built with React, TypeScript, and Vite.
 - **Animations**: Framer Motion
 - **Routing**: React Router v6
 - **SEO**: react-helmet-async
-- **Testing**: Vitest + React Testing Library
+- **Testing**: Vitest + React Testing Library + Playwright E2E
+- **Deployment**: AWS Amplify (auto-deploys on push to main)
 
 ## Quick Start
 
@@ -59,3 +60,15 @@ src/
 The dev server runs on `http://localhost:3000`.
 
 Tests run in watch mode by default. Use `yarn test --run` for a single run.
+
+E2E tests use Playwright: `yarn test:e2e`
+
+## Deployment
+
+The site is deployed via **AWS Amplify**, connected to the `main` branch.
+
+- **Live site**: https://jm-ob.com
+- **Auto-deploy**: Pushes to `main` trigger automatic builds
+- **Build output**: `/build` directory
+
+Security headers are configured in `customHttp.yml` (HSTS, CSP, X-Frame-Options).
