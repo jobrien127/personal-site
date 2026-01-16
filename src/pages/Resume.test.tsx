@@ -27,7 +27,10 @@ describe('Resume', () => {
   it('renders download link with correct attributes', () => {
     renderWithProviders(<Resume />);
     const downloadLink = screen.getByRole('link', { name: /Download Resume/i });
-    expect(downloadLink).toHaveAttribute('href', '/assets/Joseph_OBrien_CV.pdf');
+    expect(downloadLink).toHaveAttribute(
+      'href',
+      '/assets/Joseph_OBrien_CV.pdf'
+    );
     expect(downloadLink).toHaveAttribute(
       'download',
       'Joseph_OBrien_Resume.pdf'
