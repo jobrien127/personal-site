@@ -35,7 +35,7 @@ const projects: Project[] = [
     id: 4,
     title: 'Python Playground',
     description:
-      'A python playground for experiementing with machine learning and AI implementations.',
+      'A python playground for experimenting with machine learning and AI implementations.',
     link: 'https://github.com/jobrien127/python-playground',
   },
   {

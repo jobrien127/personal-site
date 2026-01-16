@@ -15,6 +15,7 @@ const TabBar: React.FC = () => {
           <button
             className={`tab-link ${location.pathname === '/' ? 'active' : ''}`}
             onClick={() => navigate('/')}
+            aria-current={location.pathname === '/' ? 'page' : undefined}
           >
             Home
           </button>
@@ -27,12 +28,16 @@ const TabBar: React.FC = () => {
           <button
             className={`tab-link ${location.pathname === '/resume' ? 'active' : ''}`}
             onClick={() => navigate('/resume')}
+            aria-current={location.pathname === '/resume' ? 'page' : undefined}
           >
             Resume
           </button>
           <button
             className={`tab-link ${location.pathname === '/portfolio' ? 'active' : ''}`}
             onClick={() => navigate('/portfolio')}
+            aria-current={
+              location.pathname === '/portfolio' ? 'page' : undefined
+            }
           >
             Portfolio
           </button>

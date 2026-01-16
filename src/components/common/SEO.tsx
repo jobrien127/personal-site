@@ -21,7 +21,7 @@ const SEO: React.FC<SEOProps> = ({
   modifiedDate,
 }) => {
   const siteTitle = `${title} | Joseph O'Brien - Software Engineer`;
-  const siteUrl = 'https://josephobrien.dev'; // Update with your actual domain
+  const siteUrl = 'https://jm-ob.com';
   const fullImageUrl = ogImage.startsWith('http')
     ? ogImage
     : `${siteUrl}${ogImage}`;

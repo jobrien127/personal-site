@@ -13,7 +13,7 @@ const Home: React.FC = () => {
     <>
       <SEO
         title="Home"
-        description=""
+        description="Experienced mobile developer and full-stack engineer specializing in React, TypeScript, and iOS development. Exploring new opportunities to build innovative software."
         keywords={[
           'software engineer',
           'app developer',

@@ -9,9 +9,7 @@ const renderWithHelmet = (ui: React.ReactElement) => {
 
 describe('SEO', () => {
   it('renders title correctly', async () => {
-    renderWithHelmet(
-      <SEO title="Test Page" description="Test description" />
-    );
+    renderWithHelmet(<SEO title="Test Page" description="Test description" />);
 
     await waitFor(() => {
       expect(document.title).toContain('Test Page');
@@ -25,19 +23,25 @@ describe('SEO', () => {
     );
 
     await waitFor(() => {
-      const metaDescription = document.querySelector('meta[name="description"]');
-      expect(metaDescription).toHaveAttribute('content', 'This is a test description');
+      const metaDescription = document.querySelector(
+        'meta[name="description"]'
+      );
+      expect(metaDescription).toHaveAttribute(
+        'content',
+        'This is a test description'
+      );
     });
   });
 
   it('renders OpenGraph tags', async () => {
-    renderWithHelmet(
-      <SEO title="OG Test" description="OG description" />
-    );
+    renderWithHelmet(<SEO title="OG Test" description="OG description" />);
 
     await waitFor(() => {
       const ogTitle = document.querySelector('meta[property="og:title"]');
-      expect(ogTitle).toHaveAttribute('content', expect.stringContaining('OG Test'));
+      expect(ogTitle).toHaveAttribute(
+        'content',
+        expect.stringContaining('OG Test')
+      );
     });
   });
 
@@ -58,7 +62,9 @@ describe('SEO', () => {
     );
 
     await waitFor(() => {
-      const xFrameOptions = document.querySelector('meta[http-equiv="X-Frame-Options"]');
+      const xFrameOptions = document.querySelector(
+        'meta[http-equiv="X-Frame-Options"]'
+      );
       expect(xFrameOptions).toHaveAttribute('content', 'SAMEORIGIN');
     });
   });
@@ -69,7 +75,9 @@ describe('SEO', () => {
     );
 
     await waitFor(() => {
-      const scripts = document.querySelectorAll('script[type="application/ld+json"]');
+      const scripts = document.querySelectorAll(
+        'script[type="application/ld+json"]'
+      );
       expect(scripts.length).toBeGreaterThanOrEqual(2);
     });
   });

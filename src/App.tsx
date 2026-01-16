@@ -4,6 +4,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import { AnimatePresence } from 'framer-motion';
 import LoadingSpinner from './components/ui/LoadingSpinner';
 import MainLayout from './components/layout/MainLayout';
+import ErrorBoundary from './components/common/ErrorBoundary';
 import GlobalStyles from './styles/GlobalStyles';
 
 // Lazy loaded pages
@@ -19,22 +20,24 @@ const App: React.FC = () => {
   return (
     <HelmetProvider>
       <GlobalStyles />
-      <Router>
+      <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
         <MainLayout>
-          <Suspense fallback={<LoadingSpinner />}>
-            <AnimatePresence mode="wait">
-              <Routes>
-                <Route path="/" element={<Home />} />
-                {/* <Route path="/about" element={<About />} /> */}
-                <Route path="/resume" element={<Resume />} />
-                <Route path="/portfolio" element={<Portfolio />} />
-                {/* <Route path="/photos" element={<Photos />} /> */}
-                {/* <Route path="/contact" element={<Contact />} /> */}
-                {/* This is the catch-all route that will display for any undefined paths */}
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </AnimatePresence>
-          </Suspense>
+          <ErrorBoundary>
+            <Suspense fallback={<LoadingSpinner />}>
+              <AnimatePresence mode="wait">
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                  {/* <Route path="/about" element={<About />} /> */}
+                  <Route path="/resume" element={<Resume />} />
+                  <Route path="/portfolio" element={<Portfolio />} />
+                  {/* <Route path="/photos" element={<Photos />} /> */}
+                  {/* <Route path="/contact" element={<Contact />} /> */}
+                  {/* This is the catch-all route that will display for any undefined paths */}
+                  <Route path="*" element={<NotFound />} />
+                </Routes>
+              </AnimatePresence>
+            </Suspense>
+          </ErrorBoundary>
         </MainLayout>
       </Router>
     </HelmetProvider>

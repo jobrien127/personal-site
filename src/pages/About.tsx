@@ -1,9 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import { useScrollToTop } from '../utils/hooks';
 
 const About: React.FC = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  useScrollToTop();
 
   const background = `My name is Joseph McGettigan O'Brien, but I go by Mac, a nickname 
   derived from my middle name. I was born and raised in Modesto, California, the hometown 
