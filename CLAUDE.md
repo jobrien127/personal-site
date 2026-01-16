@@ -14,6 +14,7 @@ yarn preview        # Preview production build locally
 yarn test           # Run Vitest in watch mode
 yarn test --run     # Run tests once (CI mode)
 yarn test --coverage # Run with coverage report
+yarn test:e2e       # Run Playwright E2E tests
 
 # Code quality
 yarn format         # Format all files with Prettier
@@ -58,6 +59,18 @@ const renderWithProviders = (ui: React.ReactElement) => {
   );
 };
 ```
+
+### E2E Testing
+
+Playwright tests are in `e2e/` directory. They test navigation, resume PDF iframe, and portfolio rendering.
+
+## Deployment
+
+AWS Amplify auto-deploys from `main` branch to https://jm-ob.com.
+
+- Pushes to `main` trigger automatic builds
+- Build output: `/build` directory
+- Security headers configured in `customHttp.yml`
 
 ## Code Style
 
