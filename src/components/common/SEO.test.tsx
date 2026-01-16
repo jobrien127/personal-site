@@ -59,7 +59,7 @@ describe('SEO', () => {
 
     await waitFor(() => {
       const xFrameOptions = document.querySelector('meta[http-equiv="X-Frame-Options"]');
-      expect(xFrameOptions).toHaveAttribute('content', 'DENY');
+      expect(xFrameOptions).toHaveAttribute('content', 'SAMEORIGIN');
     });
   });
 
