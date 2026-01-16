@@ -3,5 +3,9 @@
     "allow": [
       "Bash(yarn add:*)"
     ]
+  },
+  "sandbox": {
+    "enabled": true,
+    "autoAllowBashIfSandboxed": true
   }
 }

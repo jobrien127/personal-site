@@ -1,6 +1,19 @@
 {
-  "name": "react-app",
-  "version": "0.1.0",
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "Personal portfolio website built with React, TypeScript, and Vite",
+  "author": "Joseph O'Brien",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jobrien127/personal-site.git"
+  },
+  "keywords": [
+    "portfolio",
+    "react",
+    "typescript",
+    "vite"
+  ],
+  "homepage": "https://jm-ob.com",
   "private": true,
   "type": "module",
   "dependencies": {

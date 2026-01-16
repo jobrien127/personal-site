@@ -6,42 +6,60 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ```bash
 # Development
-yarn start          # Start development server (localhost:3000)
-yarn build          # Production build to /build directory
-yarn test           # Run tests in watch mode
-yarn test --coverage # Run tests with coverage report
+yarn start          # Start dev server (localhost:3000)
+yarn build          # Production build to /build directory (runs tsc first)
+yarn preview        # Preview production build locally
+
+# Testing
+yarn test           # Run Vitest in watch mode
+yarn test --run     # Run tests once (CI mode)
+yarn test --coverage # Run with coverage report
 
 # Code quality
-yarn format         # Format code with Prettier
+yarn format         # Format all files with Prettier
 ```
 
 ## Architecture
 
-This is a React 18 personal portfolio site using Create React App with TypeScript. It features:
+React 18 portfolio site built with **Vite** and TypeScript.
 
+- **Build**: Vite 7.x with Vitest for testing
 - **Routing**: React Router v6 with lazy-loaded pages via `React.lazy()` and `Suspense`
-- **Styling**: styled-components with a centralized `GlobalStyles.ts` for all CSS (no separate CSS files)
-- **SEO**: `react-helmet-async` via reusable `SEO` component with OpenGraph, Twitter cards, and JSON-LD structured data
+- **Styling**: styled-components with centralized `GlobalStyles.ts` (no separate CSS files)
+- **SEO**: `react-helmet-async` via `SEO` component with OpenGraph, Twitter cards, JSON-LD
 - **Animations**: Framer Motion with `AnimatePresence` for page transitions
 
 ### Key Directories
 
 - `src/pages/` - Route components (Home, Portfolio, Resume, NotFound)
 - `src/components/layout/` - MainLayout, TabBar, Footer (wraps all pages)
-- `src/components/common/` - Shared components like SEO
+- `src/components/common/` - Shared components (SEO)
 - `src/styles/GlobalStyles.ts` - All CSS in one styled-components file
-- `src/types/` - Shared TypeScript interfaces
+- `src/utils/hooks.ts` - Custom hooks (useScrollToTop)
 - `public/assets/` - Static files (PDF resume, images)
 
 ### Patterns
 
-- Pages use the `useScrollToTop` hook from `src/utils/hooks.ts` for smooth scroll restoration
-- All pages wrap content with the `SEO` component for meta tags
-- Layout follows: `HelmetProvider` > `Router` > `MainLayout` > `AnimatePresence` > `Routes`
-- Some pages are commented out in `App.tsx` (About, Photos, Contact) but implementations exist
+- All pages use `useScrollToTop()` hook and wrap content with `<SEO>` component
+- Layout hierarchy: `HelmetProvider` > `GlobalStyles` > `Router` > `MainLayout` > `Suspense` > `AnimatePresence` > `Routes`
+- Some pages exist but routes are commented out in `App.tsx` (About, Photos, Contact, Blog)
+
+### Testing
+
+Tests use Vitest with jsdom environment. Test files are colocated with components (`.test.tsx`).
+
+```tsx
+// Wrap components that use react-helmet-async or react-router
+const renderWithProviders = (ui: React.ReactElement) => {
+  return render(
+    <HelmetProvider>
+      <BrowserRouter>{ui}</BrowserRouter>
+    </HelmetProvider>
+  );
+};
+```
 
 ## Code Style
 
-- Prettier config: single quotes, semicolons, trailing commas (es5), 80 char width
-- ESLint extends react-app with Prettier integration
-- TypeScript strict mode enabled
+- Prettier: single quotes, semicolons, trailing commas (es5), 80 char width
+- TypeScript strict mode with `noUnusedLocals` and `noUnusedParameters`
