@@ -6,11 +6,7 @@ import { HelmetProvider } from 'react-helmet-async';
 const AllProviders = ({ children }: { children: React.ReactNode }) => {
   return (
     <HelmetProvider>
-      <BrowserRouter
-        future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
-      >
-        {children}
-      </BrowserRouter>
+      <BrowserRouter>{children}</BrowserRouter>
     </HelmetProvider>
   );
 };

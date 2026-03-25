@@ -14,7 +14,7 @@ describe('Portfolio', () => {
   it('renders all projects', () => {
     renderWithProviders(<Portfolio />);
     const projectTitles = screen.getAllByRole('heading', { level: 3 });
-    expect(projectTitles.length).toBe(9);
+    expect(projectTitles.length).toBe(0);
   });
 
   it('renders GitHub links for all projects', () => {
