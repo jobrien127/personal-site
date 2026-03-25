@@ -2,6 +2,8 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+> **Note:** This is the archived React version. The active site is in `../svelte/`.
+
 ## Commands
 
 ```bash
@@ -13,6 +15,7 @@ yarn preview        # Preview production build locally
 # Testing
 yarn test           # Run Vitest in watch mode
 yarn test --run     # Run tests once (CI mode)
+yarn test --run src/components/common/SEO.test.tsx  # Run a single test file
 yarn test --coverage # Run with coverage report
 yarn test:e2e       # Run Playwright E2E tests
 

@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
       <div className="footer-content">
         <div className="footer-section">
           <h4>Contact</h4>
-          <a href="mailto:dev@jm-ob.com">dev@jm-ob.com</a>
+          <a href="mailto:mac@jm-ob.com">mac@jm-ob.com</a>
         </div>
         <div className="footer-section">
           <h4>Connect</h4>
