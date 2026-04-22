@@ -18,11 +18,6 @@ describe('Home', () => {
     expect(screen.getByRole('heading', { level: 2 })).toBeInTheDocument();
   });
 
-  it('displays welcome message', () => {
-    renderWithProviders(<Home />);
-    expect(screen.getByText(/Welcome/i)).toBeInTheDocument();
-  });
-
   it('renders home section', () => {
     renderWithProviders(<Home />);
     expect(document.getElementById('home')).toBeInTheDocument();

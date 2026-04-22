@@ -7,7 +7,7 @@ describe('TabBar', () => {
   it('renders the header with name and title', () => {
     renderWithProviders(<TabBar />);
     expect(
-      screen.getByText(/Joseph.*OBrien.*Software Engineer/i)
+      screen.getByText(/Mac.*OBrien.*Software Engineer/i)
     ).toBeInTheDocument();
   });
 

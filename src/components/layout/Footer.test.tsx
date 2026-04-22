@@ -10,8 +10,8 @@ describe('Footer', () => {
 
   it('renders contact email link', () => {
     render(<Footer />);
-    const emailLink = screen.getByRole('link', { name: /dev@jm-ob\.com/i });
-    expect(emailLink).toHaveAttribute('href', 'mailto:dev@jm-ob.com');
+    const emailLink = screen.getByRole('link', { name: /mac@jm-ob\.com/i });
+    expect(emailLink).toHaveAttribute('href', 'mailto:mac@jm-ob.com');
   });
 
   it('renders LinkedIn link with correct attributes', () => {

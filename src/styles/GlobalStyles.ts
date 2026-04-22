@@ -317,11 +317,23 @@ const GlobalStyles = createGlobalStyle`
   }
 
   /* Resume styles */
+  .resume-container {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    margin-bottom: 24px;
+    overflow: hidden;
+  }
+
   .resume-frame {
     width: 100%;
     height: 800px;
     border: none;
-    margin-bottom: 20px;
+    border-radius: 10px;
+    display: block;
   }
 
   .download-link {
