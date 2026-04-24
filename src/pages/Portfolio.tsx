@@ -31,67 +31,78 @@ const projects: Project[] = [
   {
     id: 4,
     title: 'Crypto Bot',
-    description: 'Automated cryptocurrency trading bot using the Robinhood Crypto API with technical analysis, backtesting, and a rule-based signal engine',
+    description:
+      'Automated cryptocurrency trading bot using the Robinhood Crypto API with technical analysis, backtesting, and a rule-based signal engine',
     link: 'https://github.com/jobrien127/crypto-bot',
   },
   {
     id: 5,
     title: 'fin',
-    description: 'Terminal-based personal finance tracker that syncs with bank accounts via the Plaid API, with a Textual TUI',
+    description:
+      'Terminal-based personal finance tracker that syncs with bank accounts via the Plaid API, with a Textual TUI',
     link: 'https://github.com/jobrien127/fin',
   },
   {
     id: 6,
     title: 'HoodViz',
-    description: 'Portfolio visualization tool for Robinhood accounts with interactive charts, treemaps, and diversification metrics',
+    description:
+      'Portfolio visualization tool for Robinhood accounts with interactive charts, treemaps, and diversification metrics',
     link: 'https://github.com/jobrien127/hoodviz',
   },
   {
     id: 7,
     title: 'Pantry',
-    description: 'iOS app for smart pantry management — track groceries, expiration dates, and get intelligent restocking suggestions',
+    description:
+      'iOS app for smart pantry management — track groceries, expiration dates, and get intelligent restocking suggestions',
     link: 'https://github.com/jobrien127/pantry',
   },
   {
     id: 8,
     title: 'Pantry (Flutter)',
-    description: 'Cross-platform Flutter app for pantry inventory management with expiration tracking and categorization',
+    description:
+      'Cross-platform Flutter app for pantry inventory management with expiration tracking and categorization',
     link: 'https://github.com/jobrien127/pantry-flutter',
   },
   {
     id: 9,
     title: 'Python Playground',
-    description: 'Machine learning algorithms implemented from scratch using NumPy and PyTorch, covering supervised learning, neural nets, and image classification',
+    description:
+      'Machine learning algorithms implemented from scratch using NumPy and PyTorch, covering supervised learning, neural nets, and image classification',
     link: 'https://github.com/jobrien127/python-playground',
   },
   {
     id: 10,
     title: 'Ragnar',
-    description: 'Local-first RAG tool for knowledge management with AST-aware chunking, multi-collection search, and MCP server integration',
+    description:
+      'Local-first RAG tool for knowledge management with AST-aware chunking, multi-collection search, and MCP server integration',
     link: 'https://github.com/jobrien127/ragnar',
   },
   {
     id: 11,
     title: 'Robinhood API Trading',
-    description: 'Python client for the Robinhood Crypto API using Ed25519 cryptographic authentication, with order management and portfolio visualizations',
+    description:
+      'Python client for the Robinhood Crypto API using Ed25519 cryptographic authentication, with order management and portfolio visualizations',
     link: 'https://github.com/jobrien127/robinhood-api-trading',
   },
   {
     id: 12,
     title: 'Stock Up',
-    description: 'Rust/GraphQL backend service that aggregates grocery receipt data from retailer accounts, backed by PostgreSQL and Redis',
+    description:
+      'Rust/GraphQL backend service that aggregates grocery receipt data from retailer accounts, backed by PostgreSQL and Redis',
     link: 'https://github.com/jobrien127/stock-up',
   },
   {
     id: 13,
     title: 'APEX Template Language',
-    description: 'Dense, token-efficient meta-language for LLM agent communication — achieves 40–60% token reduction vs JSON',
+    description:
+      'Dense, token-efficient meta-language for LLM agent communication — achieves 40–60% token reduction vs JSON',
     link: 'https://github.com/jobrien127/template-language',
   },
   {
     id: 14,
     title: 'trdr',
-    description: 'Terminal dashboard for live stock quotes, price charts, financial statements, and options chains — built with Rust and ratatui',
+    description:
+      'Terminal dashboard for live stock quotes, price charts, financial statements, and options chains — built with Rust and ratatui',
     link: 'https://github.com/jobrien127/trdr',
   },
 ];
@@ -103,7 +114,7 @@ const Portfolio: React.FC = () => {
     <>
       <SEO
         title="Portfolio"
-        description=""
+        description="Open source projects and apps by Mac OBrien — React, TypeScript, React Native, Swift, Rust, Python, and more."
         keywords={[
           'portfolio',
           'projects',
@@ -130,14 +141,6 @@ const Portfolio: React.FC = () => {
               >
                 Link to GitHub Repository
               </a>
-              {project.link && (
-                <a
-                  href={project.link}
-                  className="project-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                />
-              )}
             </div>
           ))}
         </div>

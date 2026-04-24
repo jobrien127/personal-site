@@ -15,26 +15,20 @@ describe('Resume', () => {
     renderWithProviders(<Resume />);
     const iframe = document.querySelector('iframe');
     expect(iframe).toBeInTheDocument();
-    expect(iframe).toHaveAttribute('src', '/assets/Joseph_OBrien_CV.pdf');
+    expect(iframe).toHaveAttribute('src', '/assets/mac_obrien.pdf');
   });
 
   it('renders iframe with accessible title', () => {
     renderWithProviders(<Resume />);
-    const iframe = screen.getByTitle("Joseph O'Brien's Resume");
+    const iframe = screen.getByTitle("Mac OBrien's Resume");
     expect(iframe).toBeInTheDocument();
   });
 
   it('renders download link with correct attributes', () => {
     renderWithProviders(<Resume />);
     const downloadLink = screen.getByRole('link', { name: /Download Resume/i });
-    expect(downloadLink).toHaveAttribute(
-      'href',
-      '/assets/Joseph_OBrien_CV.pdf'
-    );
-    expect(downloadLink).toHaveAttribute(
-      'download',
-      'Joseph_OBrien_Resume.pdf'
-    );
+    expect(downloadLink).toHaveAttribute('href', '/assets/mac_obrien.pdf');
+    expect(downloadLink).toHaveAttribute('download', 'mac_obrien.pdf');
   });
 
   it('renders resume section with correct id', () => {

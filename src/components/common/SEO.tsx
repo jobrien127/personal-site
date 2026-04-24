@@ -20,7 +20,7 @@ const SEO: React.FC<SEOProps> = ({
   publishedDate,
   modifiedDate,
 }) => {
-  const siteTitle = `${title} | Joseph O'Brien - Software Engineer`;
+  const siteTitle = `${title} | Mac OBrien - Software Engineer`;
   const siteUrl = 'https://jm-ob.com';
   const fullImageUrl = ogImage.startsWith('http')
     ? ogImage
@@ -30,8 +30,7 @@ const SEO: React.FC<SEOProps> = ({
   const personSchema = {
     '@context': 'https://schema.org',
     '@type': 'Person',
-    name: "Joseph O'Brien",
-    url: siteUrl,
+    name: 'Mac OBrien',
     image: `${siteUrl}/assets/photos/headshot.png`,
     sameAs: [
       'https://www.linkedin.com/in/j-m-obrien',
@@ -58,13 +57,13 @@ const SEO: React.FC<SEOProps> = ({
   const websiteSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: "Joseph O'Brien - Software Engineer",
+    name: 'Mac OBrien - Software Engineer',
     url: siteUrl,
     description:
-      "Personal website and portfolio of Joseph O'Brien, a software engineer",
+      'Personal website and portfolio of Mac OBrien, a software engineer',
     author: {
       '@type': 'Person',
-      name: "Joseph O'Brien",
+      name: 'Mac OBrien',
     },
     potentialAction: {
       '@type': 'SearchAction',
@@ -83,12 +82,12 @@ const SEO: React.FC<SEOProps> = ({
         image: fullImageUrl,
         author: {
           '@type': 'Person',
-          name: "Joseph O'Brien",
+          name: 'Mac OBrien',
           url: siteUrl,
         },
         publisher: {
           '@type': 'Person',
-          name: "Joseph O'Brien",
+          name: 'Mac OBrien',
           logo: {
             '@type': 'ImageObject',
             url: `${siteUrl}/assets/photos/headshot.png`,
@@ -128,10 +127,7 @@ const SEO: React.FC<SEOProps> = ({
       <meta property="og:type" content={isArticle ? 'article' : 'website'} />
       <meta property="og:image" content={fullImageUrl} />
       <meta property="og:url" content={siteUrl} />
-      <meta
-        property="og:site_name"
-        content="Joseph O'Brien - Software Engineer"
-      />
+      <meta property="og:site_name" content="Mac OBrien - Software Engineer" />
       <meta property="og:locale" content="en_US" />
 
       {/* Twitter meta tags */}
@@ -150,7 +146,7 @@ const SEO: React.FC<SEOProps> = ({
       <meta name="format-detection" content="telephone=no" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-      <meta name="apple-mobile-web-app-title" content="Joseph O'Brien" />
+      <meta name="apple-mobile-web-app-title" content="Mac OBrien" />
       <meta name="mobile-web-app-capable" content="yes" />
 
       {/* Accessibility and Theme */}
@@ -165,7 +161,7 @@ const SEO: React.FC<SEOProps> = ({
 
       {/* Additional meta tags */}
       <meta name="robots" content="index, follow" />
-      <meta name="author" content="Joseph O'Brien" />
+      <meta name="author" content="Mac OBrien" />
       <meta name="generator" content="React" />
 
       {/* Canonical URL */}

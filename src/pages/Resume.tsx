@@ -9,7 +9,7 @@ const Resume: React.FC = () => {
     <>
       <SEO
         title="Resume"
-        description="Download Joseph O'Brien's professional resume. Experienced software engineer with expertise in full-stack development, JavaScript, TypeScript, React, Node.js, and Python."
+        description="Download Mac OBrien's professional resume. Experienced software engineer with expertise in mobile and web development, React, TypeScript, React Native, Swift, and Node.js."
         keywords={[
           'resume',
           'CV',
@@ -26,15 +26,15 @@ const Resume: React.FC = () => {
 
         <div className="resume-container">
           <iframe
-            src="/assets/Joseph_OBrien_CV.pdf"
+            src="/assets/mac_obrien.pdf"
             width="100%"
-            title="Joseph O'Brien's Resume"
+            title="Mac OBrien's Resume"
             className="resume-frame"
           />
         </div>
         <a
-          href="/assets/Joseph_OBrien_CV.pdf"
-          download="Joseph_OBrien_Resume.pdf"
+          href="/assets/mac_obrien.pdf"
+          download="mac_obrien.pdf"
           className="download-link"
         >
           Download Resume

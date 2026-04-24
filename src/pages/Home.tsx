@@ -9,7 +9,7 @@ const Home: React.FC = () => {
     <>
       <SEO
         title="Home"
-        description="Software engineer specializing in React, TypeScript, and iOS development."
+        description="Software engineer focused on mobile and web — React, TypeScript, React Native, and Swift."
         keywords={[
           'software engineer',
           'app developer',
@@ -25,7 +25,20 @@ const Home: React.FC = () => {
         ]}
       />
       <section id="home">
-        <h2>Home</h2>
+        <h2 className="visually-hidden">Home</h2>
+        <img
+          src="/assets/photos/headshot.png"
+          alt="Mac OBrien"
+          className="home-image"
+        />
+        <p>
+          Software engineer focused on mobile and web. The stack changes, the
+          patterns shift — that's the nature of the work. I build mostly in
+          React, TypeScript, React Native, and Swift.
+        </p>
+        <p className="home-quote">
+          "You can't stop the waves, but you can learn to surf." — Alan Watts
+        </p>
       </section>
     </>
   );

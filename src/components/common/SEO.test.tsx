@@ -13,7 +13,7 @@ describe('SEO', () => {
 
     await waitFor(() => {
       expect(document.title).toContain('Test Page');
-      expect(document.title).toContain("Joseph O'Brien");
+      expect(document.title).toContain('Mac OBrien');
     });
   });
 

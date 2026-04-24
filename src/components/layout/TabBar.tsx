@@ -33,12 +33,7 @@ const TabBar: React.FC = () => {
           >
             Portfolio
           </button>
-          {/* <button
-            className={`tab-link ${location.pathname === '/blog' ? 'active' : ''}`}
-            onClick={() => navigate('/blog')}
-          >
-            Blog
-          </button> */}
+          {/* Blog tab removed — not yet implemented */}
         </div>
       </div>
     </div>

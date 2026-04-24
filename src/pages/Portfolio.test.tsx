@@ -15,5 +15,4 @@ describe('Portfolio', () => {
     renderWithProviders(<Portfolio />);
     expect(document.getElementById('portfolio')).toBeInTheDocument();
   });
-
 });
