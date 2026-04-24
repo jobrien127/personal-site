@@ -17,7 +17,7 @@ const App: React.FC = () => {
   return (
     <HelmetProvider>
       <GlobalStyles />
-      <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+      <Router>
         <MainLayout>
           <ErrorBoundary>
             <Suspense fallback={<LoadingSpinner />}>
