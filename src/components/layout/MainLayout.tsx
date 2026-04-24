@@ -12,18 +12,7 @@ const LayoutWrapper = styled.div<WrapperProps>`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: linear-gradient(
-    135deg,
-    #0f172a 0%,
-    #1e293b 25%,
-    #334155 50%,
-    #475569 75%,
-    #64748b 100%
-  );
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: #111111;
   opacity: ${(props) => (props.$isLoaded ? 1 : 0)};
   transition: opacity 0.3s ease-in;
 
@@ -35,9 +24,9 @@ const LayoutWrapper = styled.div<WrapperProps>`
     width: 100%;
     height: 100%;
     background: radial-gradient(
-      circle at 70% 20%,
-      rgba(16, 185, 129, 0.15) 0%,
-      rgba(0, 0, 0, 0.4) 70%
+      circle at 80% 10%,
+      rgba(16, 185, 129, 0.04) 0%,
+      rgba(0, 0, 0, 0) 60%
     );
     z-index: 0;
     pointer-events: none;

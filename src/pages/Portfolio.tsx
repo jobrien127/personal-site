@@ -6,11 +6,29 @@ interface Project {
   id: number;
   title: string;
   description: string;
-  link: string;
-  sitelink?: string;
+  link?: string;
 }
 
-const projects: Project[] = [];
+const projects: Project[] = [
+  {
+    id: 1,
+    title: 'Plugin Marketplace',
+    description: 'Collection of Plugins foer Claude Code CLI',
+    link: 'https://github.com/jobrien127/market',
+  },
+  {
+    id: 2,
+    title: 'Agent Skills Library',
+    description: 'Collection of Agent Skills',
+    link: 'https://github.com/jobrien127/skills',
+  },
+  {
+    id: 3,
+    title: 'dotfiles',
+    description: 'My personal dotfile config',
+    link: 'https://github.com/jobrien127/dotfiles',
+  },
+];
 
 const Portfolio: React.FC = () => {
   useScrollToTop();
@@ -46,15 +64,13 @@ const Portfolio: React.FC = () => {
               >
                 Link to GitHub Repository
               </a>
-              {project.sitelink && (
+              {project.link && (
                 <a
-                  href={project.sitelink}
+                  href={project.link}
                   className="project-link"
                   target="_blank"
                   rel="noopener noreferrer"
-                >
-                  Link to Live Site
-                </a>
+                />
               )}
             </div>
           ))}
