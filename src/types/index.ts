@@ -1,6 +1,7 @@
-// Common interfaces and types used across the application
+import type { ReactNode } from 'react';
+
 export interface LayoutProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 export interface MetaProps {

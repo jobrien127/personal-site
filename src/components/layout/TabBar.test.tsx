@@ -7,7 +7,11 @@ describe('TabBar', () => {
   it('renders the header with name and title', () => {
     renderWithProviders(<TabBar />);
     expect(
-      screen.getByText(/Joseph.*OBrien.*Software Engineer/i)
+      screen.getByText(
+        (_, el) =>
+          el?.textContent?.replace(/\s+/g, ' ').trim() ===
+          'Mac OBrien — Software Engineer'
+      )
     ).toBeInTheDocument();
   });
 

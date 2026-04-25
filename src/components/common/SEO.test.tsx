@@ -1,9 +1,10 @@
+import type { ReactElement } from 'react';
 import { render, waitFor } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
 import { HelmetProvider } from 'react-helmet-async';
 import SEO from './SEO';
 
-const renderWithHelmet = (ui: React.ReactElement) => {
+const renderWithHelmet = (ui: ReactElement) => {
   return render(<HelmetProvider>{ui}</HelmetProvider>);
 };
 
@@ -13,7 +14,7 @@ describe('SEO', () => {
 
     await waitFor(() => {
       expect(document.title).toContain('Test Page');
-      expect(document.title).toContain("Joseph O'Brien");
+      expect(document.title).toContain('Mac OBrien');
     });
   });
 

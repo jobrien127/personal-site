@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
           <h4>Connect</h4>
           <div className="social-links">
             <a
-              href="https://www.linkedin.com/in/j-m-obrien"
+              href="https://www.linkedin.com/in/mac-ob"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn Profile"
@@ -32,8 +32,7 @@ const Footer: React.FC = () => {
       </div>
       <div className="footer-bottom">
         <p>
-          &copy; {new Date().getFullYear()} Joseph M. O&apos;Brien. All rights
-          reserved.
+          &copy; {new Date().getFullYear()} Mac OBrien. All rights reserved.
         </p>
       </div>
     </footer>

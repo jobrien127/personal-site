@@ -8,14 +8,14 @@ test.describe('Portfolio Page', () => {
 
     // Check that projects are rendered
     const projects = page.locator('.project');
-    await expect(projects).toHaveCount(9);
+    await expect(projects).toHaveCount(15);
   });
 
   test('projects have GitHub links', async ({ page }) => {
     await page.goto('/portfolio');
 
     const githubLinks = page.locator('a:has-text("Link to GitHub Repository")');
-    await expect(githubLinks).toHaveCount(9);
+    await expect(githubLinks).toHaveCount(15);
 
     // All links should open in new tab
     for (const link of await githubLinks.all()) {

@@ -10,7 +10,7 @@ test.describe('Resume Page', () => {
     // PDF iframe exists with correct src
     const iframe = page.locator('iframe');
     await expect(iframe).toBeVisible();
-    await expect(iframe).toHaveAttribute('src', '/assets/Joseph_OBrien_CV.pdf');
+    await expect(iframe).toHaveAttribute('src', '/assets/mac_obrien.pdf');
   });
 
   test('has working download link', async ({ page }) => {
@@ -20,11 +20,8 @@ test.describe('Resume Page', () => {
     await expect(downloadLink).toBeVisible();
     await expect(downloadLink).toHaveAttribute(
       'href',
-      '/assets/Joseph_OBrien_CV.pdf'
+      '/assets/mac_obrien.pdf'
     );
-    await expect(downloadLink).toHaveAttribute(
-      'download',
-      'Joseph_OBrien_Resume.pdf'
-    );
+    await expect(downloadLink).toHaveAttribute('download', 'mac_obrien.pdf');
   });
 });

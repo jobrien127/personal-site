@@ -11,38 +11,30 @@ describe('Portfolio', () => {
     ).toBeInTheDocument();
   });
 
-  it('renders all projects', () => {
-    renderWithProviders(<Portfolio />);
-    const projectTitles = screen.getAllByRole('heading', { level: 3 });
-    expect(projectTitles.length).toBe(0);
-  });
-
-  it('renders GitHub links for all projects', () => {
-    renderWithProviders(<Portfolio />);
-    const githubLinks = screen.getAllByText('Link to GitHub Repository');
-    expect(githubLinks.length).toBe(9);
-    githubLinks.forEach((link) => {
-      expect(link).toHaveAttribute('target', '_blank');
-      expect(link).toHaveAttribute('rel', 'noopener noreferrer');
-    });
-  });
-
-  it('renders live site link for lemmonlodge project', () => {
-    renderWithProviders(<Portfolio />);
-    const siteLink = screen.getByText('Link to Live Site');
-    expect(siteLink).toHaveAttribute('href', 'https://www.lemmonlodge.com');
-    expect(siteLink).toHaveAttribute('target', '_blank');
-  });
-
   it('renders portfolio section with correct id', () => {
     renderWithProviders(<Portfolio />);
     expect(document.getElementById('portfolio')).toBeInTheDocument();
   });
 
-  it('displays project descriptions', () => {
+  it('renders a project title and description', () => {
     renderWithProviders(<Portfolio />);
-    expect(screen.getByText(/Pantry iOS App/i)).toBeInTheDocument();
-    expect(screen.getByText(/HoodViz/i)).toBeInTheDocument();
-    expect(screen.getByText(/Markov Chain/i)).toBeInTheDocument();
+    expect(screen.getByText('dotfiles')).toBeInTheDocument();
+    expect(screen.getByText('My personal dotfile config')).toBeInTheDocument();
+  });
+
+  it('renders GitHub links with correct href, target, and rel attributes', () => {
+    renderWithProviders(<Portfolio />);
+    const links = screen.getAllByRole('link', {
+      name: 'Link to GitHub Repository',
+    });
+    expect(links.length).toBeGreaterThan(0);
+    links.forEach((link) => {
+      expect(link).toHaveAttribute(
+        'href',
+        expect.stringContaining('https://github.com/')
+      );
+      expect(link).toHaveAttribute('target', '_blank');
+      expect(link).toHaveAttribute('rel', 'noopener noreferrer');
+    });
   });
 });

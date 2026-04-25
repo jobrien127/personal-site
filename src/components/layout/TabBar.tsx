@@ -8,7 +8,10 @@ const TabBar: React.FC = () => {
   return (
     <div className="tab-bar">
       <div className="tab-container">
-        <header className="tab-header">Mac OBrien - Software Engineer</header>
+        <header className="tab-header">
+          <span className="tab-header-name">Mac OBrien</span>
+          {' — Software Engineer'}
+        </header>
         <div className="tab-links">
           <button
             className={`tab-link ${location.pathname === '/' ? 'active' : ''}`}
@@ -17,12 +20,6 @@ const TabBar: React.FC = () => {
           >
             Home
           </button>
-          {/* <button
-            className={`tab-link ${location.pathname === '/about' ? 'active' : ''}`}
-            onClick={() => navigate('/about')}
-          >
-            About
-          </button> */}
           <button
             className={`tab-link ${location.pathname === '/resume' ? 'active' : ''}`}
             onClick={() => navigate('/resume')}
@@ -39,24 +36,7 @@ const TabBar: React.FC = () => {
           >
             Portfolio
           </button>
-          {/* <button
-            className={`tab-link ${location.pathname === '/blog' ? 'active' : ''}`}
-            onClick={() => navigate('/blog')}
-          >
-            Blog
-          </button> */}
-          {/* <button
-            className={`tab-link ${location.pathname === '/photos' ? 'active' : ''}`}
-            onClick={() => navigate('/photos')}
-          >
-            Photos
-          </button> */}
-          {/* <button
-            className={`tab-link ${location.pathname === '/contact' ? 'active' : ''}`}
-            onClick={() => navigate('/contact')}
-          >
-            Contact
-          </button> */}
+          {/* Blog tab removed — not yet implemented */}
         </div>
       </div>
     </div>

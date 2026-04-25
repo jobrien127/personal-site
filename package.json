@@ -2,7 +2,7 @@
   "name": "personal-site",
   "version": "1.0.0",
   "description": "Personal portfolio website built with React, TypeScript, and Vite",
-  "author": "Joseph O'Brien",
+  "author": "Mac OBrien",
   "repository": {
     "type": "git",
     "url": "https://github.com/jobrien127/personal-site.git"
@@ -17,15 +17,11 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "@react-pdf-viewer/core": "^3.12.0",
-    "@react-pdf-viewer/default-layout": "^3.12.0",
     "framer-motion": "^12.26.2",
-    "pdfjs-dist": "^5.4.530",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet-async": "^2.0.4",
     "react-router-dom": "^7.12.0",
-    "react-scroll": "^1.9.0",
     "styled-components": "^6.3.6"
   },
   "devDependencies": {
@@ -38,12 +34,14 @@
     "@types/node": "^25.0.9",
     "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",
-    "@types/react-scroll": "^1.8.10",
+    "@typescript-eslint/eslint-plugin": "^8.59.0",
+    "@typescript-eslint/parser": "^8.59.0",
     "@vitejs/plugin-react": "^5.1.2",
     "@vitest/ui": "^4.0.17",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.5",
     "jsdom": "^27.4.0",
@@ -59,6 +57,7 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:e2e": "playwright test",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss,md}\""
   },
   "browserslist": {
