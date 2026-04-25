@@ -146,9 +146,9 @@ const GlobalStyles = createGlobalStyle`
     border: none;
     border-radius: var(--radius-sm);
     cursor: pointer;
-    padding: 6px 14px;
+    padding: 8px 18px;
     font-family: var(--font-body);
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-weight: 500;
     min-width: fit-content;
     transition: all 0.15s ease;
@@ -681,8 +681,8 @@ const GlobalStyles = createGlobalStyle`
     }
 
     .tab-link {
-      padding: 5px 10px;
-      font-size: 0.8125rem;
+      padding: 6px 13px;
+      font-size: 0.9375rem;
     }
 
     h2 {
@@ -753,8 +753,8 @@ const GlobalStyles = createGlobalStyle`
     }
 
     .tab-link {
-      padding: 0.25rem 0.5rem;
-      font-size: 0.8rem;
+      padding: 0.35rem 0.7rem;
+      font-size: 0.875rem;
     }
 
     .image-container {
