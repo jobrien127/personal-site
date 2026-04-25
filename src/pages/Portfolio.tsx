@@ -129,6 +129,13 @@ const projectGroups: ProjectGroup[] = [
           'Rust/GraphQL backend service that aggregates grocery receipt data from retailer accounts, backed by PostgreSQL and Redis',
         link: 'https://github.com/jobrien127/stock-up',
       },
+      {
+        id: 15,
+        title: 'Personal Site',
+        description:
+          'This portfolio site — built with React, TypeScript, and Vite, with styled-components, framer-motion animations, and Playwright e2e tests',
+        link: 'https://github.com/jobrien127/personal-site',
+      },
     ],
   },
 ];
