@@ -1,10 +1,11 @@
+import type { ReactElement } from 'react';
 import { render, screen } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
 import { BrowserRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import Home from './Home';
 
-const renderWithProviders = (ui: React.ReactElement) => {
+const renderWithProviders = (ui: ReactElement) => {
   return render(
     <HelmetProvider>
       <BrowserRouter>{ui}</BrowserRouter>

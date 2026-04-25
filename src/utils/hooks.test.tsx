@@ -1,9 +1,10 @@
+import type { ReactNode } from 'react';
 import { renderHook } from '@testing-library/react';
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { BrowserRouter } from 'react-router-dom';
 import { useScrollToTop } from './hooks';
 
-const wrapper = ({ children }: { children: React.ReactNode }) => (
+const wrapper = ({ children }: { children: ReactNode }) => (
   <BrowserRouter>{children}</BrowserRouter>
 );
 

@@ -19,7 +19,7 @@ describe('Footer', () => {
     const linkedInLink = screen.getByRole('link', { name: /LinkedIn/i });
     expect(linkedInLink).toHaveAttribute(
       'href',
-      'https://www.linkedin.com/in/j-m-obrien'
+      'https://www.linkedin.com/in/mac-ob'
     );
     expect(linkedInLink).toHaveAttribute('target', '_blank');
     expect(linkedInLink).toHaveAttribute('rel', 'noopener noreferrer');

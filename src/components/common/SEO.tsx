@@ -33,7 +33,7 @@ const SEO: React.FC<SEOProps> = ({
     name: 'Mac OBrien',
     image: `${siteUrl}/assets/photos/headshot.png`,
     sameAs: [
-      'https://www.linkedin.com/in/j-m-obrien',
+      'https://www.linkedin.com/in/mac-ob',
       'https://github.com/jobrien127',
     ],
     jobTitle: 'Software Engineer',

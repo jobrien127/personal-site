@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
           <h4>Connect</h4>
           <div className="social-links">
             <a
-              href="https://www.linkedin.com/in/j-m-obrien"
+              href="https://www.linkedin.com/in/mac-ob"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn Profile"
